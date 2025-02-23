@@ -1,0 +1,224 @@
+.login_form {
+    width: 90%;
+    max-width: 600px;
+    padding: 1rem 5.3rem;
+    background: #fff;
+    border-radius: 5% 0px 0px 5%;
+    box-shadow: 10px 10px 20px rgba(64, 64, 64, 0.15);
+    margin: auto;
+    border: 1px solid rgb(184, 184, 184);
+    max-height: 570px;
+    height: fit-content;
+    overflow: scroll;
+    scrollbar-width: thin;
+    transition: scale 0.23s ease;
+}
+.login_form:hover {
+scale: 1.02;
+}
+
+.login_form h3 {
+    font-size: 20px;
+    text-align: center;
+    margin: 1rem;
+}
+
+.login_form .login_option {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.option {
+    width: fit-content;
+}
+
+.login_form .login_option .option a {
+    height: 56px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #F8F8FB;
+    border: 2px solid #DADAF2;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #171645;
+    font-weight: 500;
+    transition: 0.2s ease;
+    width: fit-content;
+    padding: 1vw;
+}
+
+.login_form .login_option .option a:hover {
+    background: #ededf5;
+    border-color: #626cd6;
+}
+
+.login_form .login_option .option a img {
+    max-width: 25px;
+}
+
+.login_form p {
+    text-align: center;
+    font-weight: 500;
+}
+
+.login_form .separator {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+/* Login option separator styling */
+.login_form .separator span {
+    background: #fff;
+    z-index: 1;
+    padding: 0 10px;
+    position: relative;
+}
+
+
+
+form .input_box label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+/*   <<<<<<< Input field styling  <<<<<<<  */
+input {
+    width: 100%;
+    border: 1px solid #DADAF2;
+    border-radius: 5px;
+    outline: none;
+    background: #F8F8FB;
+    font-size: 17px;
+    padding: 0px 20px;
+    margin-bottom: 25px;
+    transition: 0.2s ease;
+    padding: 0.7rem;
+}
+
+form .input_box input:focus {
+    border-color: #626cd6;
+}
+
+form .input_box .forget-password {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+form .input_box {
+    position: relative;
+}
+
+form a {
+    text-decoration: none;
+    color: #626cd6;
+    font-weight: 500;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
+
+/* Login button styling */
+form button {
+    width: 100%;
+    height: 56px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: #626CD6;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 28px;
+    transition: 0.3s ease;
+}
+
+form button:hover {
+    background: #4954d0;
+}
+
+form #name {
+    display: flex;
+    justify-content: space-around;
+}
+
+form #name input {
+    width: 49%;
+}
+
+form #otpGenerate {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+form #otpGenerate #otp {
+    display: none;
+    background: rgb(212, 255, 204);
+    width: 40%;
+    text-align: center;
+}
+
+form #generate-btn {
+    width: 100%;
+}
+
+form #submit-btn {
+    width: 100%;
+    display: none;
+}
+
+form #login_page {
+    /* position: absolute; */
+    z-index: 1;
+    transition: all 0.3s ease;
+
+}
+
+form #forget_page {
+    position: absolute;
+    display: inline;
+    z-index: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+form form input:hover {
+    border: 1px solid rgb(193, 193, 193);
+    box-shadow: 4px 4px 7px 2px rgb(224, 224, 224);
+}
+
+/* ================[ AFTER COPY ]================ */
+form .otp-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+form .otp-login button {
+    background-color: #ff9b37fc;
+}
+
+form .otp-login button:hover {
+    background-color: #ff8000fc;
+}
+
+form .otpInput {
+    text-align: center;
+    letter-spacing: 10px;
+    font-weight: 600;
+    color: #298000fc;
+}
+
+form .otpInput::placeholder {
+    letter-spacing: 0px;
+
+}

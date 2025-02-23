@@ -1,0 +1,148 @@
+{
+    "mens": [
+      {
+        "id": "1",
+        "name": "Denim Shirt - Classic Blue",
+        "price": "59.99",
+        "url": "https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/u/r/p/s-crc-den-db-navy-carbonn-cloth-original-imagh2zyymbcgzrd.jpeg?q=70",
+        "about": "A timeless blue denim shirt, perfect for casual wear."
+      },
+      {
+        "id": "2",
+        "name": "Leather Jacket - Black",
+        "price": "99.99",
+        "url": "https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/y/b/i/-original-imagqfvhjsfyvwpt.jpeg?q=70",
+        "about": "Stylish black leather jacket, highest sold item for its durability and style."
+      },
+      {
+        "id": "3",
+        "name": "Hoodie - Grey",
+        "price": "229.99",
+        "url": "https://rukminim2.flixcart.com/image/612/612/xif0q/trouser/e/e/t/40-chn-61135-brown-showoff-original-imah8cgayfmrc9y2.jpeg?q=70",
+        "about": "Top-rated grey hoodie for comfort and warmth."
+      },
+      {
+        "id": "4",
+        "name": "Sunglasses - Aviator Style",
+        "price": "19.99",
+        "url": "https://rukminim2.flixcart.com/image/612/612/xif0q/track-suit/2/t/x/l-knv-linetracksuit-set-kelonbro-original-imah8z3jnx5fwwuw.jpeg?q=70",
+        "about": "All types of sunglasses, perfect for any outdoor activity."
+      }
+    ],
+    "womens": [
+      {
+        "id": "5",
+        "name": "Simran Maroon Ethnic Set",
+        "price": "59.99",
+        "url": "https://rukminim2.flixcart.com/image/612/612/xif0q/ethnic-set/h/i/w/l-simran-maroon-klosia-original-imah45pv4mfet76g.jpeg?q=70",
+        "about": "A stylish maroon ethnic set with intricate embroidery, perfect for festive and traditional occasions."
+      },
+      {
+        "id": "6",
+        "name": "Slim Fit Denim Jeans - Blue",
+        "price": "59.99",
+        "url": "https://rukminim2.flixcart.com/image/612/612/xif0q/sari/u/2/w/free-brasosari2-0-lorofy-unstitched-original-imah8zuvqwe9jvkt.jpeg?q=70",
+        "about": "Slim fit blue denim jeans, a classic essential for every wardrobe."
+      },
+      {
+        "id": "7",
+        "name": "Casual T-shirt - White",
+        "price": "59.99",
+        "url": "https://rukminim2.flixcart.com/image/612/612/kzsqykw0/kurta/j/w/0/m-jha-131-handish-original-imagbqk5z246gd9h.jpeg?q=70",
+        "about": "White casual T-shirt, soft and comfortable for daily wear."
+      },
+      {
+        "id": "8",
+        "name": "Maxi Dress - Floral",
+        "price": "59.99",
+        "url": "https://rukminim2.flixcart.com/image/612/612/xif0q/kurta/7/u/i/s-107-white-v-neck-bkapparels-original-imah5vzd6uddhzrc.jpeg?q=70",
+        "about": "Elegant floral maxi dress, perfect for parties or summer outings."
+      }
+    ],
+    "electronics": [
+      {
+        "id": "9",
+        "name": "Smartphone - 6.5\" Display",
+        "price": "59.99",
+        "url": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/b/3/x/-original-imah8pdnkx4afvh4.jpeg?q=70&crop=false",
+        "about": "6.5\" display smartphone with powerful performance and sleek design."
+      },
+      {
+        "id": "10",
+        "name": "Electric Shaver - 3 Head Rotary",
+        "price": "59.99",
+        "url": "https://rukminim2.flixcart.com/image/612/612/xif0q/shaver/9/u/3/beard-mustache-trimmer-high-power-hair-clipper-electric-hair-original-imahyar3g9mwrhgh.jpeg?q=70",
+        "about": "Rotary electric shaver with built-in trimmer, providing a close and smooth shave."
+      },
+      {
+        "id": "11",
+        "name": "Bluetooth Headphones - Wireless",
+        "price": "59.99",
+        "url": "https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/w/a/h/harmonics-twins-s3-portronics-original-imagnyqyr67eqzyw.jpeg?q=70",
+        "about": "Wireless Bluetooth headphones with high-quality sound and noise cancellation."
+      },
+      {
+        "id": "12",
+        "name": "Laptop - 15.6\" Screen",
+        "price": "59.99",
+        "url": "https://rukminim2.flixcart.com/image/612/612/kmqn3bk0/laptop-accessories-combo/s/s/z/8in1-combo-of-15-6-inches-laptop-transparent-laptop-skin-screen-original-imagfkegfbtwfgvw.jpeg?q=70",
+        "about": "15.6\" screen laptop with fast processing power and high storage."
+      }
+    ],
+    "furniture": [
+      {
+        "id": "13",
+        "name": "Wooden Chair - Classic Design",
+        "price": "59.99",
+        "url": "https://rukminim2.flixcart.com/image/150/150/jox7xjk0-1/book-shelf/7/g/j/mango-wood-sba-bw254785-balaji-honey-original-imafb9suyryyxpac.jpeg?q=70",
+        "about": "A sturdy wooden chair with a classic design, perfect for home or office use."
+      },
+      {
+        "id": "14",
+        "name": "Sofa Set - Modern Style",
+        "price": "59.99",
+        "url": "https://rukminim2.flixcart.com/image/150/150/k6fd47k0/dining-set/b/a/h/6-seater-na-rosewood-sheesham-afk-79-abishaka-decor-warm-original-imafzvx6zryuz6zs.jpeg?q=70",
+        "about": "Modern style sofa set, offering comfort and sophistication to your living room."
+      },
+      {
+        "id": "15",
+        "name": "Coffee Table - Wooden",
+        "price": "59.99",
+        "url": "https://rukminim2.flixcart.com/image/150/150/jt8yxe80/dressing-table/j/y/x/rosewood-sheesham-fntbds11tk10021-urban-ladder-teak-original-imafenadb74hkgna.jpeg?q=70",
+        "about": "Elegant wooden coffee table, ideal for modern home interiors."
+      },
+      {
+        "id": "16",
+        "name": "Bookshelf - 5 Shelves",
+        "price": "59.99",
+        "url": "https://rukminim2.flixcart.com/image/150/150/xif0q/outdoor-chair/l/t/i/45-2-53-pp-polypropylene-3-5-platina-outdoor-brown-2-arlavya-89-original-imagprtgfhmdr9rg.jpeg?q=70",
+        "about": "5-shelf bookshelf for your home, offering ample space for books and decor."
+      }
+    ],
+    "cart": [
+      {
+        "id": "2",
+        "name": "Leather Jacket - Black",
+        "price": "99.99",
+        "url": "https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/y/b/i/-original-imagqfvhjsfyvwpt.jpeg?q=70",
+        "about": "Stylish black leather jacket, highest sold item for its durability and style.",
+        "quantity": "1"
+      },
+      {
+        "id": "3",
+        "name": "Hoodie - Grey",
+        "price": "229.99",
+        "url": "https://rukminim2.flixcart.com/image/612/612/xif0q/trouser/e/e/t/40-chn-61135-brown-showoff-original-imah8cgayfmrc9y2.jpeg?q=70",
+        "about": "Top-rated grey hoodie for comfort and warmth.",
+        "quantity": 3
+      },
+      {
+        "id": "6",
+        "name": "Slim Fit Denim Jeans - Blue",
+        "price": "59.99",
+        "url": "https://rukminim2.flixcart.com/image/612/612/xif0q/sari/u/2/w/free-brasosari2-0-lorofy-unstitched-original-imah8zuvqwe9jvkt.jpeg?q=70",
+        "about": "Slim fit blue denim jeans, a classic essential for every wardrobe.",
+        "quantity": "1"
+      }
+    ]
+  }

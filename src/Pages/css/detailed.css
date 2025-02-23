@@ -1,0 +1,7 @@
+.second-div {}
+
+.second-div .card-price {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+}

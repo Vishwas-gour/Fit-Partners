@@ -1,0 +1,33 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+
+# ======================[ PROJECT PLANING ]======================
+1 => sesarch bar -> asia
+2 => home page -> only have catogory, discout,  under Rs, for gender(M,W,K) => asia 
+3 => filter by size, color, prize(high to low , low to hight), discount, rating 
+5 => show all catogory in top bar according to gender like -> bata
+6 => also age liked page and like button on shoes img 
+8 => filter section hide show -> nike

@@ -1,0 +1,20 @@
+/* =============== */
+#payment {
+    width: 50vw;
+    min-width: 25rem;
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 1rem;
+    border: 1px solid rgb(192, 192, 192);
+    box-shadow: 10px 10px 20px rgba(64, 64, 64, 0.15);
+}
+
+.btn-primary{
+    background-color: #626CD6;
+    transition: all 0.3s ease ;
+}
+
+.btn-primary:hover{
+    scale: 1.01;
+    background-color: #626CD6;
+}

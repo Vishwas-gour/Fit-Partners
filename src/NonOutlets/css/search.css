@@ -1,0 +1,21 @@
+.search{
+
+}
+.search .card-row{
+grid-template-columns: auto auto auto;  
+}
+.search .card-row .card{
+    height: 25rem;
+}
+.search .card-row .card img{
+    /* height: 25rem;? */
+}
+.search-container {
+    padding: 0px;
+    background-color: rgb(207, 207, 207);
+    position: fixed;
+    height: 100vh;
+    z-index: 17;
+    /* right: 100%; */
+    overflow: scroll;
+}

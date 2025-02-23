@@ -1,0 +1,217 @@
+.carts-container {
+    display: grid;
+    grid-template-columns:  auto auto;
+    padding: 10px;
+    justify-content: space-around;
+
+}
+
+
+/* ============= */
+.cart-product {
+    width: 100%;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+/* ==================== */
+
+.cart-card-row {
+    margin: 2px;
+    border: 1px solid rgb(225, 225, 225);
+}
+
+.cart-cards {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    background: white;
+    padding: 15px;
+}
+
+.part {
+    padding: 0.5vw;
+   
+    overflow: hidden;
+}
+
+@media (max-width:1200px) {
+    .carts-container {
+        grid-template-columns: auto;
+     
+    }
+    .cart-cards {
+      width: 80vw;
+    }
+}
+/* ======================= [ First div ] ================== */
+.first-div {
+    width: 25%;
+    text-align: center;
+}
+
+.first-div img {
+    height: 15vw;
+    width: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.first-div img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* ======================= [ Second div ] ================= */
+.second-div {
+    padding: 2vw;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-around;
+    align-items: first baseline;
+    width: 50%;
+
+}
+
+.second-div .cart-card-price{
+ text-align: left;
+ margin: 0px;
+}
+
+/* ======================= [ Third div ] ================== */
+.third-div {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+
+.third-div .quantity {
+    display: flex;
+
+}
+
+.third-div .quantity button {
+    margin: 0 0.2vw;
+    width: fit-content;
+    border: 1px solid gray;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 8px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+
+
+.third-div .quantity .update-quantity {
+    border-radius: 100px;
+    text-align: center;
+    padding: 0px 2px;
+    font-weight: bold;
+}
+
+.third-div .quantity .update-quantity:hover {
+    background: rgba(253, 254, 252, 0.731);
+}
+
+/* ================= [ Price Detail ] ================= */
+.price-detail {
+    background-color: rgb(129, 129, 234);
+    color: white;
+    padding: 15px;
+    border-radius:20px;
+    width: 100%;
+    height: fit-content;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 1rem;
+}
+
+.price-detail .detail {
+    margin: 1vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ========== Responsive Design ========== */
+@media (max-width: 1024px) {
+    .product {
+        width: 90%;
+    }
+
+    .cart-cards {
+        flex-direction: column;
+    }
+
+    .first-div,
+    .second-div,
+    .third-div {
+        width: 100%;
+    }
+
+    .first-div img {
+        height: 25vw;
+    }
+
+    .third-div {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .third-div .quantity button {
+        /* width: 4vw; */
+    }
+
+    .price-detail {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .carts-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        padding: 0;
+        width: 100%;
+    }
+
+    .cart-card-row {
+        margin: 2vw;
+    }
+
+    .first-div img {
+        height: 30vw;
+    }
+
+    .third-div {
+        grid-template-columns:  auto auto;
+    }
+    .third-div .quantity button {
+        width: 4vw;
+    }
+}
+
+@media (max-width: 524px) {
+    .third-div button {
+        scale: 0.8;
+ 
+    }
+}
+
+
+@media (max-width: 424px) {
+    .third-div {
+        grid-template-columns: auto;
+    }
+
+}

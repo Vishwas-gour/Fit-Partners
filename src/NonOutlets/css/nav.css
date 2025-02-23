@@ -1,0 +1,89 @@
+
+.logo {
+  padding: 0.5rem 0px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.logo img {
+  height: 9rem;
+}
+
+@media (max-width:600px) {
+
+  .logo img {
+    height: 11vw;
+  }
+}
+
+.my-nav {
+  background:white;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+  padding: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: -2px 2px 5px 1px rgba(131, 130, 130, 0.4);
+  margin-bottom: 10px;
+  height: 4rem;
+  
+}
+
+.my-nav a {
+  text-decoration: none;
+  position: relative;
+  color: black;
+  
+}
+
+.nav-item {
+  margin: 0;
+  gap: 1.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item div {
+  margin: 0;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-transform: none;
+}
+
+.my-nav .center a::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: all 0.2s ease;
+}
+
+.my-nav .center a:hover::after {
+  width: 90%;
+  left: 5%;
+}
+
+
+
+.my-nav .right a:hover {
+  scale: 1.05;
+  color: rgb(33, 4, 100);
+  transition: all 0.2s ease;
+  font-weight: 900;
+}
+
+
+@media (max-width:840px) {
+  .my-nav {
+   
+  }
+
+}
