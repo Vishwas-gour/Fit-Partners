@@ -4,33 +4,37 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './css/nav.css'
 import './css/search.css'
-// import tag from '../img/tag.png'
+
 import shoes from '../img/shoes.png'
 import { useSelector, useDispatch } from 'react-redux';
 // import walkingShoes from '../img/walkingShoe.gif'
 
 // // ============> LOGO'S
 import { SlLocationPin } from "react-icons/sl";
-// import { CiPen } from "react-icons/ci";
 import { CgProfile } from "react-icons/cg";
 import { CiSearch } from "react-icons/ci";
 import { PiShoppingCartThin } from "react-icons/pi";
 import { PiHeartThin } from "react-icons/pi";
+import { HiOutlineDotsCircleHorizontal } from "react-icons/hi";
 import { currentUserInfo, removeAllFromCart, searchBoxIsVisible } from "../Redux/CartSlice";
-// import {  searchBoxIsVisible } from "../Redux/CartSlice";
 import { Modal } from 'antd';
+import { useState } from 'react';
+// import { useState } from 'react';
 
 
 function MyNav() {
     // only for find length;
     const dispatch = useDispatch();
     const navigate = useNavigate();
+    const [rotate, setRotate] = useState();
+    // const [btnRotate, setBtnRotate] = useState(false)
 
     let cart = useSelector(state => state.cartSlice.cards);
     let wishlist = useSelector(state => state.cartSlice.wishlist);
     let currentUser = useSelector(state => state.cartSlice.currentUser);
     const address = currentUser?.address || "Address";
     const name = currentUser?.name || "Login";
+
 
     function logout() {
         if (name != "Login") {
@@ -59,29 +63,30 @@ function MyNav() {
         dispatch(searchBoxIsVisible(true))
     }
 
+    function toggleRotate() {
+        setRotate(!rotate);
+    }
 
     return (
         <>
 
-            <div className="my-head">
+            <div className="my-head" > {/* Remove styele */}
                 <div className="image">
                 </div>
                 <div className='some-details'>
-           
                 </div>
                 <div className='profile' >
-                    <div  ><SlLocationPin  /> {address} </div> | 
-                    <div onClick={logout} ><CgProfile  /> {name}</div>
+                    <div  ><SlLocationPin /> {address} </div> |
+                    <div onClick={logout} ><CgProfile /> {name}</div>
                 </div>
 
             </div>
-            <div className='my-nav'>
+            <div className={`my-nav ${rotate ? "small-nav" : ""}`}>
                 <ul className='nav-item left'>
-                    <a href="/">FitPartners.com </a>
+                    <Link to='/'>FitPartners.com </Link>
                     <img className='shoes' src={shoes} alt="ssd" />
                 </ul>
                 <ul className='nav-item center'>
-
                     <Link to="allProducts">Shoes</Link> |
                     <Link to="men">Men</Link> |
                     <Link to="women">Women</Link> |
@@ -93,6 +98,11 @@ function MyNav() {
                     <button onClick={() => navigate('/cart')}><PiShoppingCartThin /><span>{cart.length}</span></button>
 
                 </ul>
+                <button className={`three-line ${!rotate ? "rotateBtn" : ""}`} onClick={toggleRotate} >
+                    <div className='dot-1'><HiOutlineDotsCircleHorizontal /></div>
+                    <div className='dot-2'><HiOutlineDotsCircleHorizontal /></div>
+                    <div className='dot-3'><HiOutlineDotsCircleHorizontal /></div>
+                </button>
             </div>
 
         </>

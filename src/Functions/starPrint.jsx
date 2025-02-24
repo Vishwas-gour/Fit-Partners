@@ -1,20 +1,10 @@
 import { FaRegStar } from "react-icons/fa6";
-import { TbNumber0, TbNumber1, TbNumber2, TbNumber3, TbNumber4, TbNumber5 } from "react-icons/tb";
+
 import { LuStarOff } from "react-icons/lu";
 import { RiMessengerLine } from "react-icons/ri";
 import { FaRegStarHalf } from "react-icons/fa6";
 
 
-function numbLogos(nStar) {
-    switch (nStar) {
-        case 1: return <TbNumber1 />;
-        case 2: return <TbNumber2 />;
-        case 3: return <TbNumber3 />;
-        case 4: return <TbNumber4 />;
-        case 5: return <TbNumber5 />;
-        default: return <TbNumber0 />;
-    }
-}
 
 function returnNStar(nStar = 4) {
     return [...Array(nStar)].map((_, i) => <FaRegStar key={i} />)
@@ -44,22 +34,22 @@ function returnAvgStar(nStar, maxStar) {
 }
 
 function starPrintForReviews(nStar) {
-    let numbLogo = numbLogos(nStar);
+    // PRINT N STAR'S
     let printStar = returnNStar(nStar);
     return (
         <div className='star' >
-            {numbLogo}
+            {nStar}
             {nStar == 0 ? (<><LuStarOff /></>) : (<><div>{printStar}</div></>)}
         </div>
     )
 }
+
 function starPrintForCard(numberOfReviews, totalStar) {
     let avgStar = returnAvgStar(totalStar, numberOfReviews * 5);
     return (
         <div className='star' >
-            <div>{numbLogos(numberOfReviews)} <RiMessengerLine /></div>
+            <div>{numberOfReviews} <RiMessengerLine /></div>
             <div>{avgStar}</div>
-
         </div>
     )
 }

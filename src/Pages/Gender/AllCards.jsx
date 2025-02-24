@@ -23,6 +23,20 @@ function AllCards(prop = undefined) {
     const dispatch = useDispatch();
 
 
+    function toggleArrow(target) {
+        if (target === "r") {
+            setByRating(e => !e)
+            setAllProducts(pre => ([...pre].sort((a, b) => {
+                return (!byRating)?(a.rating - b.rating):(b.rating - a.rating);
+             })));
+        }
+        else if (target === "p") {
+            setByPrice(e => !e)
+            setAllProducts(pre => ([...pre].sort((a, b) => {
+               return (!byPrice)?(a.price - b.price):(b.price - a.price);
+            })));
+        }
+    }
     // =================[ INITIAL RENDER ]=================
     useEffect(() => {
         axios.get(productApi).then((res) => setAllProducts(res.data))
@@ -79,7 +93,7 @@ function AllCards(prop = undefined) {
                     <div className='card-title'>{product.name}</div>
                     <div className='card-text'>{product.about}</div>
                 </div>
-                <div className='avrageStar'><StarAvg id={product.id} /></div>
+                <div className='avrageStar'><StarAvg id={product.id} />  </div>
                 <div className='card-footer'>
                     <div className="card-price">INR {product.price}</div>
                     <div className="add-to-cart">
@@ -92,16 +106,12 @@ function AllCards(prop = undefined) {
         ));
     }
 
-    function toggleArrow(target) {
-         if(target === "r") setByRating(e => !e)
-         if(target === "p") setByPrice(e => !e)
-    }
 
     return (
         <div className='container'>
             <div className='sort-btn'>
-                <button onClick={()=>toggleArrow("r")}> Rating  {(byRating) ? (<BsArrowDownCircle />) : (<BsArrowUpCircle />)} </button>
-                <button onClick={()=>toggleArrow("p")}> Price  {(byPrice) ? (<BsArrowDownCircle />) : (<BsArrowUpCircle />)}    </button>
+                <button onClick={() => toggleArrow("p")}> Price  {(byPrice) ? (<BsArrowDownCircle />) : (<BsArrowUpCircle />)}    </button>
+                <button onClick={() => toggleArrow("r")}> Rating  {(byRating) ? (<BsArrowDownCircle />) : (<BsArrowUpCircle />)} </button>
             </div>
             <div className='card-row container'>{renderCard()}</div>
         </div>

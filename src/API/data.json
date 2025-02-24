@@ -3,6 +3,8 @@
     {
       "id": "12",
       "quantity": 1,
+      "noOfReviews": 1,
+      "rating": 3,
       "name": "Yoga Flats",
       "price": 60,
       "imgUrl": "https://m.media-amazon.com/images/I/719Z94XnoML._SY695_.jpg",
@@ -28,6 +30,8 @@
     {
       "id": "1",
       "quantity": 1,
+      "noOfReviews": 1,
+      "rating": 5,
       "name": "AirMax Runner",
       "price": 150,
       "imgUrl": "https://redtape.com/cdn/shop/files/RSL1165_1_1466abf0-b0f8-4440-8b61-e0248a2e20cb.jpg?v=1740073618",
@@ -53,6 +57,8 @@
     {
       "id": "2",
       "quantity": 1,
+      "noOfReviews": 1,
+      "rating": 4,
       "name": "Trail Blazer",
       "price": 180,
       "imgUrl": "https://redtape.com/cdn/shop/files/RSO4330A_1..jpg?v=1740073683",
@@ -78,6 +84,8 @@
     {
       "id": "10",
       "quantity": 1,
+      "noOfReviews": 1,
+      "rating": 4,
       "name": "Elegant Heels",
       "price": 180,
       "imgUrl": "https://m.media-amazon.com/images/I/510+P+rn2kL._SX679_PIbundle-4,TopRight,0,0_AA679SH20_.jpg",
@@ -103,6 +111,8 @@
     {
       "id": "3",
       "quantity": 1,
+      "noOfReviews": 1,
+      "rating": 3,
       "name": "Urban Sneakers",
       "price": 120,
       "imgUrl": "https://redtape.com/cdn/shop/files/RSL0187_8_jpg.jpg?v=1740064795",
@@ -127,6 +137,8 @@
     {
       "id": "4",
       "quantity": 1,
+      "noOfReviews": 1,
+      "rating": 5,
       "name": "Formal Elegance",
       "price": 200,
       "imgUrl": "https://redtape.com/cdn/shop/files/RTE5583B_1.jpg?v=1740076151",
@@ -153,6 +165,8 @@
     {
       "id": "6",
       "quantity": 1,
+      "noOfReviews": 1,
+      "rating": 5,
       "name": "Loafer Comfort",
       "price": 130,
       "imgUrl": "https://redtape.com/cdn/shop/files/RTE5581B_1.jpg?v=1740076154",
@@ -178,6 +192,8 @@
     {
       "id": "9",
       "quantity": 1,
+      "noOfReviews": 1,
+      "rating": 4,
       "name": "AirMax Swift",
       "price": 140,
       "imgUrl": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/695697f10f154c34825f5fc9c1a59f69_9366/Messi_F50_League_Firm-Multi-Ground_Boots_Gold_IG9274_HM1.jpg",
@@ -203,6 +219,8 @@
     {
       "id": "7",
       "quantity": 1,
+      "noOfReviews": 1,
+      "rating": 2,
       "name": "Beach Flip-Flops",
       "price": 50,
       "imgUrl": "https://redtape.com/cdn/shop/files/RFF1154A_1_jpg_00d1f04f-f7b0-4eff-83fc-47a37646de74.jpg?v=1740075555&width=990",
@@ -228,6 +246,8 @@
     {
       "id": "8",
       "quantity": 1,
+      "noOfReviews": 1,
+      "rating": 4,
       "name": "Vintage Boots",
       "price": 250,
       "imgUrl": "https://redtape.com/cdn/shop/files/RTE3194B_1_jpg.jpg?v=1740088012",
@@ -253,6 +273,8 @@
     {
       "id": "5",
       "quantity": 1,
+      "noOfReviews": 1,
+      "rating": 0,
       "name": "SportFlex Trainer",
       "price": 140,
       "imgUrl": "https://redtape.com/cdn/shop/files/OZC0277_1.jpg?v=1740074218",
@@ -278,6 +300,8 @@
     {
       "id": "11",
       "quantity": 1,
+      "noOfReviews": 1,
+      "rating": 5,
       "name": "Casual Sneakers",
       "price": 90,
       "imgUrl": "https://redtape.com/cdn/shop/files/RLL0303A_1.jpg?v=1740074143",
@@ -304,6 +328,8 @@
     {
       "id": "13",
       "quantity": 1,
+      "noOfReviews": 1,
+      "rating": 2,
       "name": "Winter Boots",
       "price": 200,
       "imgUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/d/x/h/6-ts-511-blk-6-flopsie-black-original-imah6u7gpbcfvwf5.jpeg?q=70",
@@ -329,6 +355,8 @@
     {
       "id": "14",
       "quantity": 1,
+      "noOfReviews": 1,
+      "rating": 5,
       "name": "Beach Sandals",
       "price": 50,
       "imgUrl": "https://redtape.com/cdn/shop/files/RLF0102A_1.jpg?v=1740075862&width=990",
@@ -354,6 +382,8 @@
     {
       "id": "15",
       "quantity": 1,
+      "noOfReviews": 1,
+      "rating": 3,
       "name": "Office Loafers",
       "price": 130,
       "imgUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/v/8/x/5-fst-fjdwc-7003-black-38-fausto-black-original-imah8mpexczgmzsf.jpeg?q=70",
@@ -379,6 +409,8 @@
     {
       "id": "16",
       "quantity": 1,
+      "noOfReviews": 1,
+      "rating": 5,
       "name": "Hiking Boots",
       "price": 220,
       "imgUrl": "https://m.media-amazon.com/images/I/41-KX24Z4nL.jpg",
@@ -404,6 +436,8 @@
     {
       "id": "17",
       "quantity": 1,
+      "noOfReviews": 1,
+      "rating": 2,
       "name": "Mini Runner",
       "price": 80,
       "imgUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/kids-shoe/x/y/d/9c-brd-sh-1302-birde-original-imah78hbh8q2whns.jpeg?q=70",
@@ -429,6 +463,8 @@
     {
       "id": "18",
       "quantity": 1,
+      "noOfReviews": 1,
+      "rating": 4,
       "name": "Little Sprinter",
       "price": 85,
       "imgUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/kids-shoe/v/b/t/8c-z-pri-8033-bersache-original-imah5gcgffyc7t9w.jpeg?q=70",
@@ -454,6 +490,8 @@
     {
       "id": "19",
       "quantity": 1,
+      "noOfReviews": 1,
+      "rating": 4,
       "name": "Tiny Trekker",
       "price": 90,
       "imgUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/kids-shoe/5/h/v/1-h1011-boomer-cubs-original-imah4gm3vzzd6zuv.jpeg?q=70",
@@ -480,6 +518,8 @@
     {
       "id": "20",
       "quantity": 1,
+      "noOfReviews": 1,
+      "rating": 2,
       "name": "Junior Jumper",
       "price": 95,
       "imgUrl": "https://m.media-amazon.com/images/I/61smpQgbcCL._AC_UL480_FMwebp_QL65_.jpg",
@@ -505,6 +545,8 @@
     {
       "id": "21",
       "quantity": 1,
+      "noOfReviews": 1,
+      "rating": 0,
       "name": "Playground Pro",
       "price": 70,
       "imgUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/kids-shoe/l/b/f/0-5c-unisex-kids-chu-chu-sound-knitted-shoes-for-1-3-yrs-boys-original-imahfh39vwf55mnx.jpeg?q=70",
@@ -530,6 +572,8 @@
     {
       "id": "22",
       "quantity": 1,
+      "noOfReviews": 1,
+      "rating": 3,
       "name": "Explorer Sandals",
       "price": 60,
       "imgUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/kids-sandal/x/k/w/8c-crax-11-trz-original-imah9a3hedn8at5w.jpeg?q=70",
@@ -554,6 +598,8 @@
     {
       "id": "23",
       "quantity": 1,
+      "noOfReviews": 1,
+      "rating": 0,
       "name": "Sporty Slip-Ons",
       "price": 75,
       "imgUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/kids-slipper-flip-flop/o/b/a/-original-imagzyf2zaxwbtxy.jpeg?q=70",
@@ -579,6 +625,8 @@
     {
       "id": "24",
       "quantity": 1,
+      "noOfReviews": 1,
+      "rating": 1,
       "name": "Adventure Boots",
       "price": 100,
       "imgUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/kids-shoe/0/s/m/-original-imaghugtsgwrg5he.jpeg?q=70",
@@ -613,31 +661,220 @@
   ],
   "review": [
     {
-      "id": "517f",
+      "id": "1a1b",
       "comment": "Awesome product",
-      "gmail": "vishwasgour@gmail.com",
-      "productId": 12,
+      "gmail": "user1@gmail.com",
+      "productId": 1,
+      "like": 2,
+      "dislike": 0,
+      "star": 5
+    },
+    {
+      "id": "2a2b",
+      "comment": "Good quality, worth the price",
+      "gmail": "user2@gmail.com",
+      "productId": 2,
+      "like": 3,
+      "dislike": 1,
+      "star": 4
+    },
+    {
+      "id": "3a3b",
+      "comment": "Not bad, could be better",
+      "gmail": "user3@gmail.com",
+      "productId": 3,
+      "like": 1,
+      "dislike": 1,
+      "star": 3
+    },
+    {
+      "id": "4a4b",
+      "comment": "Very useful and reliable",
+      "gmail": "user4@gmail.com",
+      "productId": 4,
+      "like": 4,
+      "dislike": 0,
+      "star": 5
+    },
+    {
+      "id": "5a5b",
+      "comment": "Average product, expected more",
+      "gmail": "user5@gmail.com",
+      "productId": 5,
+      "like": 1,
+      "dislike": 2,
+      "star": 3
+    },
+    {
+      "id": "6a6b",
+      "comment": "Highly recommended",
+      "gmail": "user6@gmail.com",
+      "productId": 6,
+      "like": 5,
+      "dislike": 0,
+      "star": 5
+    },
+    {
+      "id": "7a7b",
+      "comment": "Not satisfied, poor quality",
+      "gmail": "user7@gmail.com",
+      "productId": 7,
       "like": 0,
+      "dislike": 4,
+      "star": 2
+    },
+    {
+      "id": "8a8b",
+      "comment": "Good value for money",
+      "gmail": "user8@gmail.com",
+      "productId": 8,
+      "like": 3,
+      "dislike": 1,
+      "star": 4
+    },
+    {
+      "id": "9a9b",
+      "comment": "Works as expected",
+      "gmail": "user9@gmail.com",
+      "productId": 9,
+      "like": 2,
       "dislike": 0,
       "star": 4
     },
     {
-      "id": "3d97",
-      "comment": "Average product",
-      "gmail": "vishwasgour@gmail.com",
-      "productId": 1,
-      "like": 0,
+      "id": "10a10b",
+      "comment": "Delivery was late, but product is good",
+      "gmail": "user10@gmail.com",
+      "productId": 10,
+      "like": 1,
+      "dislike": 1,
+      "star": 4
+    },
+    {
+      "id": "11a11b",
+      "comment": "Excellent product, very happy",
+      "gmail": "user11@gmail.com",
+      "productId": 11,
+      "like": 5,
       "dislike": 0,
+      "star": 5
+    },
+    {
+      "id": "12a12b",
+      "comment": "Just okay, nothing special",
+      "gmail": "user12@gmail.com",
+      "productId": 12,
+      "like": 1,
+      "dislike": 1,
       "star": 3
     },
     {
-      "id": "5cdf",
-      "comment": "Pura Paisa vasul",
-      "gmail": "vishwasgour@gmail.com",
-      "productId": 3,
+      "id": "13a13b",
+      "comment": "Poor customer service",
+      "gmail": "user13@gmail.com",
+      "productId": 13,
       "like": 0,
+      "dislike": 3,
+      "star": 2
+    },
+    {
+      "id": "14a14b",
+      "comment": "Very durable and useful",
+      "gmail": "user14@gmail.com",
+      "productId": 14,
+      "like": 4,
       "dislike": 0,
       "star": 5
+    },
+    {
+      "id": "15a15b",
+      "comment": "Quality could be better",
+      "gmail": "user15@gmail.com",
+      "productId": 15,
+      "like": 1,
+      "dislike": 2,
+      "star": 3
+    },
+    {
+      "id": "16a16b",
+      "comment": "Absolutely love it!",
+      "gmail": "user16@gmail.com",
+      "productId": 16,
+      "like": 6,
+      "dislike": 0,
+      "star": 5
+    },
+    {
+      "id": "17a17b",
+      "comment": "Not worth the price",
+      "gmail": "user17@gmail.com",
+      "productId": 17,
+      "like": 0,
+      "dislike": 3,
+      "star": 2
+    },
+    {
+      "id": "18a18b",
+      "comment": "Good features, easy to use",
+      "gmail": "user18@gmail.com",
+      "productId": 18,
+      "like": 3,
+      "dislike": 1,
+      "star": 4
+    },
+    {
+      "id": "19a19b",
+      "comment": "Met my expectations",
+      "gmail": "user19@gmail.com",
+      "productId": 19,
+      "like": 2,
+      "dislike": 0,
+      "star": 4
+    },
+    {
+      "id": "20a20b",
+      "comment": "Too expensive for the quality",
+      "gmail": "user20@gmail.com",
+      "productId": 20,
+      "like": 0,
+      "dislike": 2,
+      "star": 2
+    },
+    {
+      "id": "21a21b",
+      "comment": "Perfect for daily use",
+      "gmail": "user21@gmail.com",
+      "productId": 21,
+      "like": 5,
+      "dislike": 0,
+      "star": 5
+    },
+    {
+      "id": "22a22b",
+      "comment": "Packaging was damaged",
+      "gmail": "user22@gmail.com",
+      "productId": 22,
+      "like": 1,
+      "dislike": 2,
+      "star": 3
+    },
+    {
+      "id": "23a23b",
+      "comment": "Highly functional and stylish",
+      "gmail": "user23@gmail.com",
+      "productId": 23,
+      "like": 4,
+      "dislike": 0,
+      "star": 5
+    },
+    {
+      "id": "24a24b",
+      "comment": "Would not recommend",
+      "gmail": "user24@gmail.com",
+      "productId": 24,
+      "like": 0,
+      "dislike": 4,
+      "star": 1
     }
   ]
 }

@@ -17,7 +17,8 @@ function AllCards() {
     const [allProducts, setAllProducts] = useState([]);
     const searchContainer = useSelector((state) => state.cartSlice.search);
     const style = {
-        width: "55vw"
+        width: "55vw",
+        
     }
     const productApi = `http://localhost:3000/products`;
     const dispatch = useDispatch();
