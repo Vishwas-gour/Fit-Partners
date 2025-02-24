@@ -7,7 +7,8 @@ const Slice = createSlice({
     cards: [],
     currentUser: {},
     allCards:[],
-    search : ""
+    search : false, // for visibility
+    wishlist: [],
   },
   reducers: {
     addToCart: (state, { payload }) => {
@@ -43,11 +44,27 @@ const Slice = createSlice({
     currentUserInfo: (state, { payload }) => {
       state.currentUser = payload;
     },
-    addInSearchBar:(state, {payload})=>{
+    searchBoxIsVisible:(state, {payload})=>{
       state.search = payload;
-      console.log(payload)
-    }
+    },
+
+
+    toggleWishlit: (state, { payload }) => {
+      if (state.currentUser === null) {
+        message.info("You need to log in to continue.")
+        return;
+      }
+      let data = state.wishlist.find(wish => wish.id === payload.id);
+      if (data) {
+        state.wishlist = state.wishlist.filter((item) => (payload.id != item.id));
+        message.warning("Product removed from  wishelist")
+      }
+      else {
+        state.wishlist.push(payload)
+        message.success("Product added to  wishelist")
+      }
+    },
   }
 });
-export const { addToCart, removeFromCart, increQuantity, decreQuantity, currentUserInfo, removeAllFromCart,addInSearchBar } = Slice.actions;
+export const { addToCart, removeFromCart, increQuantity, decreQuantity, currentUserInfo, removeAllFromCart,searchBoxIsVisible, toggleWishlit } = Slice.actions;
 export default Slice.reducer;

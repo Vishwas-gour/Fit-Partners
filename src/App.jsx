@@ -15,6 +15,7 @@ import Men from './Pages/Gender/Men.jsx';
 import Women from './Pages/Gender/Women.jsx';
 import Kids from './Pages/Gender/Kids.jsx';
 import AllCards from './Pages/Gender/AllCards.jsx';
+import Wishlist from './Pages/Wishlist.jsx';
 function App() {
   return (
     <Router>
@@ -22,15 +23,17 @@ function App() {
         <Route path='/' element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="home" element={<Home />} />
-          <Route path="cart" element={<Cart />} />
           <Route path="allProducts" element={<AllCards />} />
           <Route path="men" element={<Men />} />
           <Route path="women" element={<Women />} />
           <Route path="kids" element={<Kids />} />
+          <Route path="cart" element={<Cart />} />
+          <Route path="wishlist" element={<Wishlist />} />
           
           <Route path="detailedProduct/:id" element={<DetailedProduct />} />
           <Route path="payment/:id" element={<Payment />} />
           <Route path="popup" element={<Popup />} />
+
           <Route path="login" element={<LoginForm />} />
           <Route path="forget" element={<Forget />} />
           <Route path="signUp" element={<SignUp />} />

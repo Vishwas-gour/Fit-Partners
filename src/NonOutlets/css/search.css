@@ -1,21 +1,101 @@
-.search{
+.search-container {
+    position: fixed;
+    padding-bottom: 5rem;
+    background-color: rgb(231, 231, 231);
+    height: 100vh;
+    z-index: 11;
+    right: 0;
+    top: 0;
+    overflow: scroll;
+    scrollbar-width: thin;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    box-shadow: 3px 5px 5px 1px rgba(165, 165, 165, 0.54);
+    border-left: 1px solid rgb(123, 123, 123);
+    transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+
+
+.search-container .searchBox {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    height: fit-content;
+    z-index: 10;
+    top: 0;
+    height: 4rem;
 
 }
-.search .card-row{
-grid-template-columns: auto auto auto;  
+
+.search-container .searchBox .searchInput {
+    position: relative;
+    width: 70%;
 }
-.search .card-row .card{
-    height: 25rem;
+.search-container .searchBox .searchInput input{
+    padding-left: 3rem;
+    box-shadow: 3px 5px 5px 1px rgba(190, 190, 190, 0.54);
+    border-radius: 4rem;
 }
-.search .card-row .card img{
-    /* height: 25rem;? */
+
+.search-container .searchBox .searchIcon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    color: rgb(151, 151, 151);
+    transform:translate(0%,-55%) ;
 }
-.search-container {
-    padding: 0px;
-    background-color: rgb(207, 207, 207);
-    position: fixed;
-    height: 100vh;
-    z-index: 17;
-    /* right: 100%; */
-    overflow: scroll;
+.search-container .searchBox button {
+    border: 1px solid rgb(213, 213, 213);
+    background-color: #fefefe;
+    color: black;
+    height: 2.4rem;
+    width: 2.4rem;
+    padding: 0;
+    border-radius: 4rem;
+    box-shadow: 3px 5px 5px 1px rgba(190, 190, 190, 0.54);
+}
+
+.search-container .card-rows {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.search-container .card-rows .card {
+    box-shadow: 6px 6px 10px 1px rgb(153, 153, 153);
+    max-height: 22rem;
+    max-width: 14rem;
+}
+
+.search-container .card-rows .avrageStar .star {
+
+    padding: 0;
+}
+
+.search-container .card-rows .card-img {
+    padding: 0;
+    margin: 0;
+    height: fit-content;
+}
+
+.search-container .card-rows .card-body {
+    padding: 0;
+    margin: 0;
+    height: fit-content;
+}
+
+.search-container .card-rows .avrageStar {
+    padding: 0;
+    margin: 0;
+    height: fit-content;
+}
+
+.search-container .card-rows .card-footer {
+    padding: 0;
+    margin: 0;
+    height: fit-content;
 }

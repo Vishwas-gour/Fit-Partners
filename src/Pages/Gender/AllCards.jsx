@@ -1,4 +1,4 @@
-
+import '../css/card.css'
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
@@ -6,23 +6,30 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addToCart } from '../../Redux/CartSlice';
 import StarAvg from '../../Components/StarAvg';
 import { Modal } from 'antd';
-import '../css/card.css'
+import { BsArrowDownCircle } from "react-icons/bs";
+import { BsArrowUpCircle } from "react-icons/bs";
 
-function AllCards(prop) {
+
+function AllCards(prop = undefined) {
 
     const navigate = useNavigate();
-    const [allProducts, setAllProducts] = useState(["asdf"]);
+    // const [allProducts, setAllProducts] = useState(["asdf"]);
+    const [allProducts, setAllProducts] = useState([]);
+    const [byRating, setByRating] = useState(true);
+    const [byPrice, setByPrice] = useState(true);
     const carts = useSelector((state) => state.cartSlice.cards);
     const currentUser = useSelector((state) => state.cartSlice.currentUser);
     const productApi = `http://localhost:3000/products`;
     const dispatch = useDispatch();
+
 
     // =================[ INITIAL RENDER ]=================
     useEffect(() => {
         axios.get(productApi).then((res) => setAllProducts(res.data))
             .catch((err) => console.error("Error fetching products:", err));
 
-    }, []);
+    }, [productApi, prop.category]);
+
 
 
     // =============== SET DATA IN CART-API
@@ -44,6 +51,7 @@ function AllCards(prop) {
             Modal.confirm({
                 title: "Item added to cart. Do you want to view the cart?",
                 onOk() {
+                    navigate(0);
                     navigate("/cart")
                 }
             });
@@ -58,7 +66,7 @@ function AllCards(prop) {
     }
 
     // ======================={ SET PRODUCTS }========================= 
-    console.log(prop.category)
+
 
     function renderCard() {
         return allProducts.filter((product) => (prop.category) ? (product.category === prop.category) : (true)
@@ -84,9 +92,17 @@ function AllCards(prop) {
         ));
     }
 
+    function toggleArrow(target) {
+         if(target === "r") setByRating(e => !e)
+         if(target === "p") setByPrice(e => !e)
+    }
 
     return (
         <div className='container'>
+            <div className='sort-btn'>
+                <button onClick={()=>toggleArrow("r")}> Rating  {(byRating) ? (<BsArrowDownCircle />) : (<BsArrowUpCircle />)} </button>
+                <button onClick={()=>toggleArrow("p")}> Price  {(byPrice) ? (<BsArrowDownCircle />) : (<BsArrowUpCircle />)}    </button>
+            </div>
             <div className='card-row container'>{renderCard()}</div>
         </div>
     )

@@ -11,7 +11,7 @@ function Cart() {
     const currentUser = useSelector((state) => state.cartSlice.currentUser);
     const dispatch = useDispatch();
 
-    const [priceCalcu, setPriceCalulation] = useState({});
+    const [priceCalculation, setPriceCalulation] = useState({});
     const navigate = useNavigate();
 
     // ======================={ handleQuantity() } ============
@@ -23,7 +23,8 @@ function Cart() {
     let totalPrize = 0;
     let totalProducts = 0;
     let sections = function () {
-
+        console.log(carts)
+   
         return carts.map((key, index) => (
             <span span key={index}>
                 <div style={{ display: "none" }}>{totalProducts++}{totalPrize += key.price * key.quantity}</div>
@@ -81,7 +82,7 @@ function Cart() {
         let discount = parseFloat(totalPrize * 0.1).toFixed(2);
         let deliveryCharges = parseFloat(totalPrize * 0.01).toFixed(2);
         let priceAfterDiscount = (parseFloat(totalPrize - discount + +(deliveryCharges))).toFixed(2);
-        let platformFee = Number(totalPrize * 0.02).toFixed(2);
+        let platformFee = parseFloat(totalPrize * 0.02).toFixed(2);
 
         if (platformFee > 10) platformFee = 9.76
         setPriceCalulation(
@@ -95,6 +96,7 @@ function Cart() {
             })
     }, [totalPrize]);
 
+    console.log(priceCalculation)
     return (
         (currentUser &&
             <>
@@ -113,23 +115,23 @@ function Cart() {
                             </div>
                             <div className='detail'>
                                 <div>Discount</div>
-                                <div>₹{priceCalcu.discount}</div>
+                                <div>₹{priceCalculation.discount}</div>
                             </div>
                             <div className='detail'>
                                 <div>Platform fee</div>
-                                <div>₹{priceCalcu.platformFee}</div>
+                                <div>₹{priceCalculation.platformFee}</div>
                             </div>
 
                             <div className='detail'>
                                 <div>Delivery Charges</div>
-                                <div>₹{priceCalcu.deliveryCharges}</div>
+                                <div>₹{priceCalculation.deliveryCharges}</div>
                             </div>
 
                             <div className='detail'>
                                 <div>total Amount</div>
-                                <div >₹{priceCalcu.priceAfterDiscount}</div>
+                                <div >₹{priceCalculation.priceAfterDiscount}</div>
                             </div>
-                            <div className='detail' style={{ color: "yellow" }}>You will save ₹{priceCalcu.discount} on this order</div>
+                            <div className='detail' style={{ color: "yellow" }}>You will save ₹{priceCalculation.discount} on this order</div>
 
                         </div>
                     </div>

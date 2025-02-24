@@ -82,7 +82,6 @@ scale: 1.02;
 form .input_box label {
     display: block;
     font-weight: 500;
-    margin-bottom: 8px;
 }
 
 /*   <<<<<<< Input field styling  <<<<<<<  */
@@ -94,7 +93,6 @@ input {
     background: #F8F8FB;
     font-size: 17px;
     padding: 0px 20px;
-    margin-bottom: 25px;
     transition: 0.2s ease;
     padding: 0.7rem;
 }

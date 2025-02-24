@@ -8,10 +8,10 @@
     font-weight: 400;
 }
 
-:root{
+:root {
     scrollbar-width: none;
 }
-/* for removing up and down arrows */
+
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
@@ -21,52 +21,26 @@ input[type="number"]::-webkit-outer-spin-button {
 button {
     position: relative;
     margin: 0;
-    padding: 0.5em 0.5em;
+    padding: 0 0.5em;
     cursor: pointer;
-    border: none;
     text-transform: uppercase;
-    background-color: #333;
-    border-radius: 10px;
-    color: #fff;
     font-weight: 300;
-    font-family: inherit;
-    overflow: hidden;
-    transition: all 0.1s cubic-bezier(0.02, 0.01, 0.47, 1);
     min-width: fit-content;
+    border: 1px solid rgb(173, 173, 173);
+    background-color: #fefefe;
+    color: black;
+    border-radius: 4rem;
+    box-shadow: 3px 5px 5px 1px rgba(190, 190, 190, 0.54);
+    transition: all 0.1s ease;
 }
 
 button:hover {
-   scale: 1.04;
+    scale: 1.04;
 }
-
-
-
 
 input[type="number"] {
     width: 40px;
 }
-
-
-h1 {
-    text-align: center;
-    color: #333;
-    padding: 0.4rem;
-    margin: 1rem;
-    background-color: rgb(203, 203, 203);
-    font-size: 30px;
-    border-radius: 10px;
-}
-
-
-/* #container {
-    width: 100vw;
-    padding: 0 10%;
-} */
-
 .section-heading {
     text-align: center;
 }
-
-
-
-

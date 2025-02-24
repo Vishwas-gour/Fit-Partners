@@ -2,6 +2,7 @@
   "products": [
     {
       "id": "12",
+      "quantity": 1,
       "name": "Yoga Flats",
       "price": 60,
       "imgUrl": "https://m.media-amazon.com/images/I/719Z94XnoML._SY695_.jpg",
@@ -26,13 +27,14 @@
     },
     {
       "id": "1",
+      "quantity": 1,
       "name": "AirMax Runner",
       "price": 150,
       "imgUrl": "https://redtape.com/cdn/shop/files/RSL1165_1_1466abf0-b0f8-4440-8b61-e0248a2e20cb.jpg?v=1740073618",
       "about": "Lightweight running shoes with cushioned support.",
       "detailed_description": "Breathable mesh upper, lightweight cushioning, and durable rubber outsole. Perfect for long runs and daily wear.",
       "category": "men",
-      "names": "AirMax Runner, Running Shoes,Sports Shoes,Athletic Wear",
+      "names": "AirMax Runner, Running Shoes, Sports Shoes, Athletic Wear",
       "shoeType": "Running",
       "sizeRange": [
         7,
@@ -50,6 +52,7 @@
     },
     {
       "id": "2",
+      "quantity": 1,
       "name": "Trail Blazer",
       "price": 180,
       "imgUrl": "https://redtape.com/cdn/shop/files/RSO4330A_1..jpg?v=1740073683",
@@ -74,6 +77,7 @@
     },
     {
       "id": "10",
+      "quantity": 1,
       "name": "Elegant Heels",
       "price": 180,
       "imgUrl": "https://m.media-amazon.com/images/I/510+P+rn2kL._SX679_PIbundle-4,TopRight,0,0_AA679SH20_.jpg",
@@ -98,17 +102,14 @@
     },
     {
       "id": "3",
+      "quantity": 1,
       "name": "Urban Sneakers",
       "price": 120,
       "imgUrl": "https://redtape.com/cdn/shop/files/RSL0187_8_jpg.jpg?v=1740064795",
       "about": "Stylish sneakers for casual outings.",
       "detailed_description": "Comfortable fit with a sleek design, suitable for everyday wear.",
       "category": "men",
-      "names": [
-        "Urban Sneakers",
-        "Casual Shoes",
-        "Street Wear"
-      ],
+      "names": "Urban Sneakers, Casual Shoes, Street Wear",
       "shoeType": "Casual",
       "sizeRange": [
         7,
@@ -125,17 +126,14 @@
     },
     {
       "id": "4",
+      "quantity": 1,
       "name": "Formal Elegance",
       "price": 200,
       "imgUrl": "https://redtape.com/cdn/shop/files/RTE5583B_1.jpg?v=1740076151",
       "about": "Classic formal shoes for business and events.",
       "detailed_description": "Premium leather finish with cushioned insoles for all-day comfort.",
       "category": "men",
-      "names": [
-        "Formal Elegance",
-        "Dress Shoes",
-        "Office Wear"
-      ],
+      "names": "Formal Elegance, Dress Shoes, Office Wear",
       "shoeType": "Formal",
       "sizeRange": [
         6,
@@ -154,17 +152,14 @@
     },
     {
       "id": "6",
+      "quantity": 1,
       "name": "Loafer Comfort",
       "price": 130,
       "imgUrl": "https://redtape.com/cdn/shop/files/RTE5581B_1.jpg?v=1740076154",
       "about": "Casual loafers for a laid-back look.",
       "detailed_description": "Soft cushioning with a slip-on design for easy wear.",
       "category": "men",
-      "names": [
-        "Loafer Comfort",
-        "Slip-on Shoes",
-        "Casual Loafers"
-      ],
+      "names": "Loafer Comfort, Slip-on Shoes, Casual Loafers",
       "shoeType": "Casual",
       "sizeRange": [
         7,
@@ -182,9 +177,10 @@
     },
     {
       "id": "9",
+      "quantity": 1,
       "name": "AirMax Swift",
       "price": 140,
-      "imgUrl": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/695697f10f154c34825f5fc9c1a59f69_9366/Messi_F50_League_Firm-Multi-Ground_Boots_Gold_IG9274_HM1.jpg  ",
+      "imgUrl": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/695697f10f154c34825f5fc9c1a59f69_9366/Messi_F50_League_Firm-Multi-Ground_Boots_Gold_IG9274_HM1.jpg",
       "about": "Comfortable running shoes with responsive cushioning.",
       "detailed_description": "Breathable mesh, lightweight midsole, and durable grip outsole. Ideal for active lifestyles.",
       "category": "women",
@@ -206,17 +202,14 @@
     },
     {
       "id": "7",
+      "quantity": 1,
       "name": "Beach Flip-Flops",
       "price": 50,
       "imgUrl": "https://redtape.com/cdn/shop/files/RFF1154A_1_jpg_00d1f04f-f7b0-4eff-83fc-47a37646de74.jpg?v=1740075555&width=990",
       "about": "Comfortable flip-flops for the beach.",
       "detailed_description": "Water-resistant material and soft sole, perfect for summer days.",
       "category": "men",
-      "names": [
-        "Beach Flip-Flops",
-        "Sandals",
-        "Summer Wear"
-      ],
+      "names": "Beach Flip-Flops, Sandals, Summer Wear",
       "shoeType": "Flip-Flops",
       "sizeRange": [
         7,
@@ -234,17 +227,14 @@
     },
     {
       "id": "8",
+      "quantity": 1,
       "name": "Vintage Boots",
       "price": 250,
       "imgUrl": "https://redtape.com/cdn/shop/files/RTE3194B_1_jpg.jpg?v=1740088012",
       "about": "Classic boots with a vintage touch.",
       "detailed_description": "Durable leather with rugged soles, stylish and functional.",
       "category": "men",
-      "names": [
-        "Vintage Boots",
-        "Leather Boots",
-        "Classic Footwear"
-      ],
+      "names": "Vintage Boots, Leather Boots, Classic Footwear",
       "shoeType": "Boots",
       "sizeRange": [
         8,
@@ -262,17 +252,14 @@
     },
     {
       "id": "5",
+      "quantity": 1,
       "name": "SportFlex Trainer",
       "price": 140,
       "imgUrl": "https://redtape.com/cdn/shop/files/OZC0277_1.jpg?v=1740074218",
       "about": "High-performance trainers for the gym.",
       "detailed_description": "Breathable fabric, flexible sole, and excellent grip for intense workouts.",
       "category": "men",
-      "names": [
-        "SportFlex Trainer",
-        "Gym Shoes",
-        "Workout Sneakers"
-      ],
+      "names": "SportFlex Trainer, Gym Shoes, Workout Sneakers",
       "shoeType": "Training",
       "sizeRange": [
         7,
@@ -290,6 +277,7 @@
     },
     {
       "id": "11",
+      "quantity": 1,
       "name": "Casual Sneakers",
       "price": 90,
       "imgUrl": "https://redtape.com/cdn/shop/files/RLL0303A_1.jpg?v=1740074143",
@@ -315,6 +303,7 @@
     },
     {
       "id": "13",
+      "quantity": 1,
       "name": "Winter Boots",
       "price": 200,
       "imgUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/d/x/h/6-ts-511-blk-6-flopsie-black-original-imah6u7gpbcfvwf5.jpeg?q=70",
@@ -339,6 +328,7 @@
     },
     {
       "id": "14",
+      "quantity": 1,
       "name": "Beach Sandals",
       "price": 50,
       "imgUrl": "https://redtape.com/cdn/shop/files/RLF0102A_1.jpg?v=1740075862&width=990",
@@ -363,6 +353,7 @@
     },
     {
       "id": "15",
+      "quantity": 1,
       "name": "Office Loafers",
       "price": 130,
       "imgUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/v/8/x/5-fst-fjdwc-7003-black-38-fausto-black-original-imah8mpexczgmzsf.jpeg?q=70",
@@ -387,6 +378,7 @@
     },
     {
       "id": "16",
+      "quantity": 1,
       "name": "Hiking Boots",
       "price": 220,
       "imgUrl": "https://m.media-amazon.com/images/I/41-KX24Z4nL.jpg",
@@ -411,6 +403,7 @@
     },
     {
       "id": "17",
+      "quantity": 1,
       "name": "Mini Runner",
       "price": 80,
       "imgUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/kids-shoe/x/y/d/9c-brd-sh-1302-birde-original-imah78hbh8q2whns.jpeg?q=70",
@@ -435,6 +428,7 @@
     },
     {
       "id": "18",
+      "quantity": 1,
       "name": "Little Sprinter",
       "price": 85,
       "imgUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/kids-shoe/v/b/t/8c-z-pri-8033-bersache-original-imah5gcgffyc7t9w.jpeg?q=70",
@@ -459,6 +453,7 @@
     },
     {
       "id": "19",
+      "quantity": 1,
       "name": "Tiny Trekker",
       "price": 90,
       "imgUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/kids-shoe/5/h/v/1-h1011-boomer-cubs-original-imah4gm3vzzd6zuv.jpeg?q=70",
@@ -484,6 +479,7 @@
     },
     {
       "id": "20",
+      "quantity": 1,
       "name": "Junior Jumper",
       "price": 95,
       "imgUrl": "https://m.media-amazon.com/images/I/61smpQgbcCL._AC_UL480_FMwebp_QL65_.jpg",
@@ -508,6 +504,7 @@
     },
     {
       "id": "21",
+      "quantity": 1,
       "name": "Playground Pro",
       "price": 70,
       "imgUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/kids-shoe/l/b/f/0-5c-unisex-kids-chu-chu-sound-knitted-shoes-for-1-3-yrs-boys-original-imahfh39vwf55mnx.jpeg?q=70",
@@ -532,6 +529,7 @@
     },
     {
       "id": "22",
+      "quantity": 1,
       "name": "Explorer Sandals",
       "price": 60,
       "imgUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/kids-sandal/x/k/w/8c-crax-11-trz-original-imah9a3hedn8at5w.jpeg?q=70",
@@ -555,6 +553,7 @@
     },
     {
       "id": "23",
+      "quantity": 1,
       "name": "Sporty Slip-Ons",
       "price": 75,
       "imgUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/kids-slipper-flip-flop/o/b/a/-original-imagzyf2zaxwbtxy.jpeg?q=70",
@@ -579,6 +578,7 @@
     },
     {
       "id": "24",
+      "quantity": 1,
       "name": "Adventure Boots",
       "price": 100,
       "imgUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/kids-shoe/0/s/m/-original-imaghugtsgwrg5he.jpeg?q=70",
@@ -604,12 +604,40 @@
   ],
   "loginInfo": [
     {
-      "id": "fb67",
-      "name": "vishu",
-      "address": "1",
-      "gmail": "v@gmail.com",
-      "password": "1"
+      "id": "4109",
+      "name": "vishwas gour",
+      "address": "bhopal, 462003",
+      "gmail": "vishwasgour@gmail.com",
+      "password": "123"
     }
   ],
-  "review": []
+  "review": [
+    {
+      "id": "517f",
+      "comment": "Awesome product",
+      "gmail": "vishwasgour@gmail.com",
+      "productId": 12,
+      "like": 0,
+      "dislike": 0,
+      "star": 4
+    },
+    {
+      "id": "3d97",
+      "comment": "Average product",
+      "gmail": "vishwasgour@gmail.com",
+      "productId": 1,
+      "like": 0,
+      "dislike": 0,
+      "star": 3
+    },
+    {
+      "id": "5cdf",
+      "comment": "Pura Paisa vasul",
+      "gmail": "vishwasgour@gmail.com",
+      "productId": 3,
+      "like": 0,
+      "dislike": 0,
+      "star": 5
+    }
+  ]
 }

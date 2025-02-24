@@ -35,7 +35,6 @@ function Review({ id }) {
     const otherReviews = `http://localhost:3000/review/?productId=${id}`;
     axios.get(otherReviews).then((res) => {
       setReviews(res.data)
-      console.log(reviews)
     }
     ).catch((err) => console.error("Error => :", err));
   }
@@ -103,10 +102,10 @@ function Review({ id }) {
     const name = e.target.name;
     setInput((prev) => ({ ...prev, [name]: value }));
   }
-  console.log(input)
+
   // ==================== MANAGE LIKE/DISLIKE
   function likeDislikeFunct(e, check) {
-    console.log(likeDislike)
+    
     if (check == likeDislike) {
       e.target.style.color = "black"
       setLikeDislike(0)

@@ -1,5 +1,24 @@
 .second-div {}
 
+.detailed-cards .first-div{
+    position: relative;
+}
+.like-btn {
+    position: absolute;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.796);
+    top: 2rem;
+    right: 2rem;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease;
+}
+
 .second-div .card-price {
     display: grid;
     grid-template-columns: auto auto auto;

@@ -1,27 +1,89 @@
-
-.logo {
-  padding: 0.5rem 0px;
-  text-align: center;
-  background-color: rgb(255, 255, 255);
+* {
+  /* border: 1px solid rgb(255, 0, 0); */
 }
 
-.logo img {
-  height: 9rem;
+.my-head {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+
+  color: wheat;
+  background-color: rgb(0, 0, 0);
+  min-height: fit-content;
+  padding: 1rem;
 }
 
-@media (max-width:600px) {
+.some-details {
+  transition: all 1s ease;
+}
 
-  .logo img {
-    height: 11vw;
+
+.some-details:after {
+  content: "";
+  animation: changeContent 15s infinite;
+  font-weight: 600;
+  transition: all 1s ease;
+
+}
+
+@keyframes changeContent {
+
+  0%,
+  20% {
+    content: "FREE RETURNS AND FREE EXCHANGE.";
+  }
+
+  21%,
+  40% {
+    content: "⚡1-DAY EXPRESS DELIVERY NOW AVAILABLE IN BANGALORE!";
+  }
+
+  41%,
+  60% {
+    content: "SOLVE YOUR QUERIES FASTER THAN EVER! SEND US A 'HI' ON WHATSAPP AT 6364929121";
+  }
+
+  61%,
+  80% {
+    content: "EXTRA 5% OFF AND FREE SHIPPING ON ALL ONLINE PAYMENTS*";
+  }
+
+  81%,
+  100% {
+    content: "FIT PARTNERS";
   }
 }
 
+.profile {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1rem;
+}
+
+.profile div {
+  cursor: pointer;
+  padding: 0 0.5rem;
+  letter-spacing: 2px;
+  color: wheat;
+  gap: 2rem;
+  text-transform: capitalize;
+}
+
+
+
+a {
+  text-decoration: none;
+  position: relative;
+  color: black;
+
+}
+
 .my-nav {
-  background:white;
+  background: rgb(255, 255, 255);
   position: sticky;
-  top: 0px;
+  top: 0;
   z-index: 3;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -29,15 +91,9 @@
   box-shadow: -2px 2px 5px 1px rgba(131, 130, 130, 0.4);
   margin-bottom: 10px;
   height: 4rem;
-  
+
 }
 
-.my-nav a {
-  text-decoration: none;
-  position: relative;
-  color: black;
-  
-}
 
 .nav-item {
   margin: 0;
@@ -55,6 +111,35 @@
   text-transform: none;
 }
 
+.my-nav .left {
+  mix-blend-mode: multiply
+}
+
+.my-nav .left .shoes {
+  border-radius: 100% 100% 0 0;
+  height: 4rem;
+  position: absolute;
+  mix-blend-mode: darken;
+  left: 11rem;
+  animation: spin 2s ease-in-out infinite;
+  transform-origin: top;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(10deg);
+  }
+
+  50% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+
 .my-nav .center a::after {
   content: "";
   position: absolute;
@@ -71,19 +156,43 @@
   left: 5%;
 }
 
+.my-nav .right button {
+  border: 1px solid rgb(173, 173, 173);
+  background-color: #fefefe;
+  color: black;
+  min-height: 2.4rem;
+  min-width: 2.4rem;
+  padding: 0;
+  border-radius: 4rem;
+  box-shadow: 3px 5px 5px 1px rgba(190, 190, 190, 0.54);
+  font-size: 1.4em;
+  transition: all 0.3s ease;
+  position: relative;
+}
 
+.my-nav .right button span {
+  padding: 0;
+  height: 1rem;
+  width: 1rem;
+  position: absolute;
+  right: 0%;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 0, 0);
+  border-radius: 50%;
+
+}
+
+
+.my-nav .right button:hover {
+  transition: all 0.1s ease;
+  scale: 1.1;
+}
 
 .my-nav .right a:hover {
   scale: 1.05;
   color: rgb(33, 4, 100);
   transition: all 0.2s ease;
   font-weight: 900;
-}
-
-
-@media (max-width:840px) {
-  .my-nav {
-   
-  }
-
 }
