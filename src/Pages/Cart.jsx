@@ -23,35 +23,32 @@ function Cart() {
     let totalPrize = 0;
     let totalProducts = 0;
     let sections = function () {
-        console.log(carts)
-   
         return carts.map((key, index) => (
-            <span span key={index}>
+            <>
                 <div style={{ display: "none" }}>{totalProducts++}{totalPrize += key.price * key.quantity}</div>
-                <div className='cart-card-row'>
-                    <div className='cart-cards'>
-                        <div className='first-div part'>
-                            <img src={key.imgUrl} alt="" />
-                        </div>
-                        <div className='second-div part'>
-                            <div className='card-title'><h3>{key.name}</h3></div>
-                            <div className='card-text'>{key.about}</div>
-                            <div className="cart-card-price"><h4>INR {(key.price * key.quantity).toFixed(2)}</h4></div>
-                        </div>
+                <div className='cart-cards'>
+                    <div className='first-div part'>
+                        <img src={key.imgUrl} alt="" />
+                    </div>
 
-                        <div className="third-div part">
-                            <div className='quantity'>
-                                <button id={key.id} className='update-quantity' onClick={() => handleQuantity(index, false)}>➖</button>
-                                <button type="number" >item {key.quantity}</button>
-                                <button id={key.id} className='update-quantity' onClick={() => handleQuantity(index, true)}>➕</button>
-                            </div>
-                            <button className='cart-btn remove' id={key.id} onClick={(e) => removeItem(e.target.id)}>Remove</button>
-                            <button style={{ background: "rgb(129, 129, 234)" }} onClick={() => navigate(`/payment/${key.id}`)} >Buy-Product</button>
-                            <button style={{ background: "rgb(234, 225, 129)", color: "black" }} onClick={() => navigate(`/detailedProduct/${key.id}`)}>More... </button>
+                    <div className='second-div part'>
+                        <div className='card-title'><h3>{key.name}</h3></div>
+                        <div className='card-text'>{key.about}</div>
+                        <div className="cart-card-price"><h4>INR {(key.price * key.quantity).toFixed(2)}</h4></div>
+                    </div>
+
+                    <div className="third-div part">
+                        <div className='quantity'>
+                            <button id={key.id} className='update-quantity' onClick={() => handleQuantity(index, false)}>➖</button>
+                            <button type="number" >item {key.quantity}</button>
+                            <button id={key.id} className='update-quantity' onClick={() => handleQuantity(index, true)}>➕</button>
                         </div>
+                        <button className='cart-btn remove' id={key.id} style={{ background: "rgba(251, 0, 0, 0.48)" }} onClick={(e) => removeItem(e.target.id)}>Remove</button>
+                        <button style={{ background: "rgb(129, 129, 234)" }} onClick={() => navigate(`/payment/${key.id}`)} >Buy-Product</button>
+                        <button style={{ background: "rgb(234, 225, 129)", color: "black" }} onClick={() => navigate(`/detailedProduct/${key.id}`)}>More... </button>
                     </div>
                 </div>
-            </span>
+            </>
         ));
     }
 
@@ -71,11 +68,11 @@ function Cart() {
 
     // ========================[ Calculation of Price Detail ]=================
     //==> when any item remove or quantity the price update and this useEffect render on that
-    
-    useEffect(()=>{
+
+    useEffect(() => {
         window.scrollTo(0, 0);
-    },[])
-    
+    }, [])
+
     useEffect(() => {
         totalPrize = parseFloat(totalPrize).toFixed(2);
         totalProducts = parseFloat(totalProducts).toFixed(2);
@@ -96,49 +93,56 @@ function Cart() {
             })
     }, [totalPrize]);
 
-    console.log(priceCalculation)
+
     return (
-        (currentUser &&
+      
             <>
-                <div className='container'>
-                    <div className='carts-container'>
-                        <div className='cart-product'>
-                            {/* CART DATA */}
-                            {product}
+
+                {(  currentUser && carts.lenght != 0) ? (
+
+                    <>
+
+                        <div className='carts-container  '>
+                            <div className='cart-product'>
+                                {product}
+                            </div>
+                            <div className='price-detail'>
+                                <h2>Price detail</h2>
+                                <div className='detail'>
+                                    <div>Price ({totalProducts})</div>
+                                    <div>₹{totalPrize}</div>
+                                </div>
+                                <div className='detail'>
+                                    <div>Discount</div>
+                                    <div>₹{priceCalculation.discount}</div>
+                                </div>
+                                <div className='detail'>
+                                    <div>Platform fee</div>
+                                    <div>₹{priceCalculation.platformFee}</div>
+                                </div>
+
+                                <div className='detail'>
+                                    <div>Delivery Charges</div>
+                                    <div>₹{priceCalculation.deliveryCharges}</div>
+                                </div>
+
+                                <div className='detail'>
+                                    <div>total Amount</div>
+                                    <div >₹{priceCalculation.priceAfterDiscount}</div>
+                                </div>
+                                <div className='detail' style={{ color: "yellow" }}>You will save ₹{priceCalculation.discount} on this order</div>
+                            </div>
                         </div>
-                        {/* Prize details */}
-                        <div className='price-detail'>
-                            <h2>Price detail</h2>
-                            <div className='detail'>
-                                <div>Price ({totalProducts})</div>
-                                <div>₹{totalPrize}</div>
-                            </div>
-                            <div className='detail'>
-                                <div>Discount</div>
-                                <div>₹{priceCalculation.discount}</div>
-                            </div>
-                            <div className='detail'>
-                                <div>Platform fee</div>
-                                <div>₹{priceCalculation.platformFee}</div>
-                            </div>
-
-                            <div className='detail'>
-                                <div>Delivery Charges</div>
-                                <div>₹{priceCalculation.deliveryCharges}</div>
-                            </div>
-
-                            <div className='detail'>
-                                <div>total Amount</div>
-                                <div >₹{priceCalculation.priceAfterDiscount}</div>
-                            </div>
-                            <div className='detail' style={{ color: "yellow" }}>You will save ₹{priceCalculation.discount} on this order</div>
-
-                        </div>
+                    </>
+                ) : (
+                    <div className='no-item'>
+                        No items in Cart
                     </div>
-                </div>
+                )}
             </>
+
         )
-    )
+    
 }
 
 export default Cart

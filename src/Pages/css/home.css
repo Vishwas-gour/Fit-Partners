@@ -1,8 +1,13 @@
-*{
+* {
     /* border:1px solid red; */
 }
+
+.home {
+    margin: 0 10vw;
+}
+
 .sec {
-    margin: 4rem 2rem;
+    margin: 5vw 3vw;
 }
 
 .images {
@@ -11,8 +16,12 @@
     gap: 1.5rem;
 }
 
+.images img{
+    cursor: pointer;
+}
 .heading {
     text-align: center;
+    font-size: clamp(12px, 3vw, 2.3rem);
 }
 
 .sec-1 .images {
@@ -26,12 +35,15 @@
 .sec-3 .images {
     grid-template-columns: auto auto auto auto;
 }
-.sec-3 .images img{
+
+.sec-3 .images img {
     width: 100%;
     height: 80%;
 }
-.images .about{
+
+.images .about {
     text-align: center;
+    font-size: clamp(12px, 2.3vw, 1.2rem);
 }
 
 .sec-4 .images {
@@ -39,19 +51,22 @@
     column-width: 17vw;
 }
 
-.sec-4 .images img{
+.sec-4 .images img {
     margin-top: 2rem;
     width: 100%;
 }
-.sec-5 .images{
-    grid-template-columns:  auto auto auto;
+
+.sec-5 .images {
+    grid-template-columns: auto auto auto;
     height: fit-content;
 }
+
 .sec-5 .images div {
-    /* border:1px solid red; */
+
     height: fit-content;
 }
-.sec-5 .images img{
+
+.sec-5 .images img {
     margin: auto;
     width: 100%;
     height: 20vw;
@@ -65,4 +80,24 @@
 
 .images img:hover {
     scale: 1.03;
+}
+
+.about {
+
+}
+
+@media (max-width:600px) {
+    .home {
+        margin: 0 6vw;
+    }
+
+    .sec-2 .images {
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+    }
+    .sec-3 .images {
+        grid-template-columns: auto auto;
+    }
+
+    .sec-3 {}
 }

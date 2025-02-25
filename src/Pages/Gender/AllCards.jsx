@@ -7,6 +7,7 @@ import { addToCart } from '../../Redux/CartSlice';
 import StarAvg from '../../Components/StarAvg';
 import { Modal } from 'antd';
 import { BsArrowDownCircle } from "react-icons/bs";
+
 import { BsArrowUpCircle } from "react-icons/bs";
 
 
@@ -65,7 +66,6 @@ function AllCards(prop = undefined) {
             Modal.confirm({
                 title: "Item added to cart. Do you want to view the cart?",
                 onOk() {
-                    navigate(0);
                     navigate("/cart")
                 }
             });
@@ -108,13 +108,13 @@ function AllCards(prop = undefined) {
 
 
     return (
-        <div className='container'>
+        <>
             <div className='sort-btn'>
                 <button onClick={() => toggleArrow("p")}> Price  {(byPrice) ? (<BsArrowDownCircle />) : (<BsArrowUpCircle />)}    </button>
                 <button onClick={() => toggleArrow("r")}> Rating  {(byRating) ? (<BsArrowDownCircle />) : (<BsArrowUpCircle />)} </button>
             </div>
-            <div className='card-row container'>{renderCard()}</div>
-        </div>
+            <div className='card-row'>{renderCard()}</div>
+        </>
     )
 }
 export default AllCards;

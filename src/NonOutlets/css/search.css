@@ -14,9 +14,22 @@
     box-shadow: 3px 5px 5px 1px rgba(165, 165, 165, 0.54);
     border-left: 1px solid rgb(123, 123, 123);
     transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+
 }
 
+.full-search {
+    width: 55vw;
+}
 
+@media (max-width:1000px) {
+    .full-search {
+        width: 100vw;
+    }
+}
+
+.half-search {
+    width: 0px;
+}
 
 .search-container .searchBox {
     display: flex;
@@ -35,7 +48,8 @@
     position: relative;
     width: 70%;
 }
-.search-container .searchBox .searchInput input{
+
+.search-container .searchBox .searchInput input {
     padding-left: 3rem;
     box-shadow: 3px 5px 5px 1px rgba(190, 190, 190, 0.54);
     border-radius: 4rem;
@@ -46,8 +60,9 @@
     left: 1rem;
     top: 50%;
     color: rgb(151, 151, 151);
-    transform:translate(0%,-55%) ;
+    transform: translate(0%, -55%);
 }
+
 .search-container .searchBox button {
     border: 1px solid rgb(213, 213, 213);
     background-color: #fefefe;

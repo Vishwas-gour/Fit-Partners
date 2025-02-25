@@ -64,7 +64,10 @@ const Slice = createSlice({
         message.success("Product added to  wishelist")
       }
     },
+    removeAllFromWishlist: (state) => {
+      state.wishlist.length = 0;
+    }
   }
 });
-export const { addToCart, removeFromCart, increQuantity, decreQuantity, currentUserInfo, removeAllFromCart,searchBoxIsVisible, toggleWishlit } = Slice.actions;
+export const { addToCart, removeFromCart, increQuantity, decreQuantity, currentUserInfo, removeAllFromCart,searchBoxIsVisible, toggleWishlit,removeAllFromWishlist } = Slice.actions;
 export default Slice.reducer;

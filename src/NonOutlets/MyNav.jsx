@@ -16,7 +16,7 @@ import { CiSearch } from "react-icons/ci";
 import { PiShoppingCartThin } from "react-icons/pi";
 import { PiHeartThin } from "react-icons/pi";
 import { HiOutlineDotsCircleHorizontal } from "react-icons/hi";
-import { currentUserInfo, removeAllFromCart, searchBoxIsVisible } from "../Redux/CartSlice";
+import { currentUserInfo, removeAllFromCart, removeAllFromWishlist, searchBoxIsVisible } from "../Redux/CartSlice";
 import { Modal } from 'antd';
 import { useState } from 'react';
 // import { useState } from 'react';
@@ -44,6 +44,7 @@ function MyNav() {
                 onOk() {
                     dispatch(currentUserInfo(null))
                     dispatch(removeAllFromCart())
+                    dispatch(removeAllFromWishlist())
                     navigate('/login');
                 }
             });
@@ -73,11 +74,9 @@ function MyNav() {
             <div className="my-head" > {/* Remove styele */}
                 <div className="image">
                 </div>
-                <div className='some-details'>
-                </div>
                 <div className='profile' >
-                    <div  ><SlLocationPin /> {address} </div> |
-                    <div onClick={logout} ><CgProfile /> {name}</div>
+                    <button  ><SlLocationPin /> {address} </button> |
+                    <button onClick={logout} ><CgProfile /> {name}</button>
                 </div>
 
             </div>
@@ -105,6 +104,7 @@ function MyNav() {
                 </button>
             </div>
 
+            <div className='some-details'></div>
         </>
     )
 }

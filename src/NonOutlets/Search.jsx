@@ -16,10 +16,6 @@ function AllCards() {
     const navigate = useNavigate();
     const [allProducts, setAllProducts] = useState([]);
     const searchContainer = useSelector((state) => state.cartSlice.search);
-    const style = {
-        width: "55vw",
-        
-    }
     const productApi = `http://localhost:3000/products`;
     const dispatch = useDispatch();
 
@@ -56,10 +52,7 @@ function AllCards() {
                     <div className='avrageStar'><StarAvg id={product.id} /></div>
                     <div className='card-footer'>
                         <div className="card-price">INR {product.price}</div>
-                        <div className="add-to-cart">
-                            {/* <button id={product.id} onClick={(e) => getCardData(e.target.id)} className='cart-btn'>
-                            Add To Cart
-                        </button> */}
+                        <div className="add-to-cart">   
                         </div>
                     </div>
                 </div>
@@ -70,8 +63,9 @@ function AllCards() {
         dispatch(searchBoxIsVisible(false))
     }
 
+    
     return (
-        <div className="search-container" style={(searchContainer) ? (style) : ({ width: "0px" })}>
+        <div className={`search-container ${searchContainer?("full-search"):("half-search")}`} >
             <div className='searchBox' >
                 <div className='searchInput'>
                     <input type="text" placeholder='Search' value={input} onChange={(e) => setInput(e.target.value)} />
@@ -81,7 +75,7 @@ function AllCards() {
             </div>
             <div className='card-rows' >
                 {(!input) ? (
-                    <p style={{color:"grey"}}>
+                    <p style={{color:"grey", margin:"1rem"}}>
                         Search for products,shoe styles, product collections / categories or key words
                     </p>) : (renderCard())}
             </div>

@@ -1,19 +1,20 @@
 import Slide from '../Components/Slide'
 import './css/home.css'
-
+import { useNavigate } from 'react-router-dom'
 
 function Home() {
  
+    const naveigate = useNavigate()
     return (
       <>
       <Slide/>
-      <div className='container'>
+      <div className='home'>
             <div className='sec-1 sec'>
                 <h2 className='heading'>Shop For</h2>
                 <div className="images">
-                    <img src="https://www.asianfootwears.com/_next/image?url=https%3A%2F%2Fs3-ap-southeast-1.amazonaws.com%2Fasianapp%2Fdigital-website%2FMen%20(1)_38296015347945907043.png&w=1920&q=75" alt="" />
-                    <img src="https://www.asianfootwears.com/_next/image?url=https%3A%2F%2Fs3-ap-southeast-1.amazonaws.com%2Fasianapp%2Fdigital-website%2FWomen%20(1)_78339552774875641563.png&w=1920&q=75" alt="" />
-                    <img src="https://www.asianfootwears.com/_next/image?url=https%3A%2F%2Fs3-ap-southeast-1.amazonaws.com%2Fasianapp%2Fdigital-website%2FKids%20(1)_15487276532494259644.png&w=1920&q=75" alt="" />
+                    <img  onClick={()=>naveigate('/men')}  src="https://www.asianfootwears.com/_next/image?url=https%3A%2F%2Fs3-ap-southeast-1.amazonaws.com%2Fasianapp%2Fdigital-website%2FMen%20(1)_38296015347945907043.png&w=1920&q=75" alt="" />
+                    <img onClick={()=>naveigate('/women')}   src="https://www.asianfootwears.com/_next/image?url=https%3A%2F%2Fs3-ap-southeast-1.amazonaws.com%2Fasianapp%2Fdigital-website%2FWomen%20(1)_78339552774875641563.png&w=1920&q=75" alt="" />
+                    <img onClick={()=>naveigate('/kids')}   src="https://www.asianfootwears.com/_next/image?url=https%3A%2F%2Fs3-ap-southeast-1.amazonaws.com%2Fasianapp%2Fdigital-website%2FKids%20(1)_15487276532494259644.png&w=1920&q=75" alt="" />
                 </div>
             </div>
             <div className='sec-2 sec'>

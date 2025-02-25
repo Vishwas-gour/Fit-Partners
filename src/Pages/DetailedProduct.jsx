@@ -70,11 +70,11 @@ function DetailedProduct() {
 
     return (
         <>
-            <div className='parent'>
+            <div className='container'>
                 <div className='detailed-cards'>
                     <div className='first-div part'>
                         <img src={card.imgUrl} alt="" />
-                        <button className='like-btn' onClick={clickEvent}  > {(isLiked) ? (< FcDislike/>) : (< FcLike/>)}</button>
+                        <div className='like-btn' onClick={clickEvent}  > {(isLiked) ? (< FcDislike/>) : (< FcLike/>)}</div>
                     </div>
                     <div className='second-div part'>
                         <div className='card-title'>{card.name}</div>
@@ -82,7 +82,7 @@ function DetailedProduct() {
                         <div className='card-text2'>{card.detailed_description}</div>
                         <div className="card-price"><h4>₹{(card.price)}</h4>
                             <button onClick={() => handleBuy()}>Buy Product</button>
-                            <button onClick={() => dispatch(addToCart(card))}>Add TO Cart</button>
+                            <button onClick={() => dispatch(addToCart(card))}>Add To Cart</button>
                         </div>
                     </div>
                 </div>
