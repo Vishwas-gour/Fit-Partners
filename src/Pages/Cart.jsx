@@ -98,7 +98,7 @@ function Cart() {
       
             <>
 
-                {(  currentUser && carts.lenght != 0) ? (
+                {(  currentUser && carts.length > 0) ? (
 
                     <>
 
