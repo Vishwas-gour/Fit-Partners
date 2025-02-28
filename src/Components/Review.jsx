@@ -42,6 +42,10 @@ function Review({ id }) {
   useEffect(() => {
     loadReviews();
   }, [id]);
+  
+  useEffect(() => {
+    allReviews();
+  });
 
 
   function printEmoji() {

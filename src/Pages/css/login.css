@@ -13,9 +13,9 @@
     scrollbar-width: thin;
     transition: scale 0.23s ease;
 }
-.login_form:hover {
+/* .login_form:hover {
 scale: 1.02;
-}
+} */
 
 .login_form h3 {
     font-size: 20px;

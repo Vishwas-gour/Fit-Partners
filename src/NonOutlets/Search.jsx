@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { searchBoxIsVisible } from '../Redux/CartSlice';
@@ -11,8 +11,10 @@ import { limitTheLength } from '../Functions/starPrint';
 import { RxCross1 } from "react-icons/rx";
 import { IoSearchOutline } from "react-icons/io5";
 
-function AllCards() {
-    const [input, setInput] = useState();
+// eslint-disable-next-line react/prop-types
+function Search() {
+    const { props } = useParams()
+    const [input, setInput] = useState(props);
     const navigate = useNavigate();
     const [allProducts, setAllProducts] = useState([]);
     const searchContainer = useSelector((state) => state.cartSlice.search);
@@ -21,10 +23,18 @@ function AllCards() {
 
     // =================[ INITIAL RENDER ]=================
     useEffect(() => {
+
         axios.get(productApi).then((res) => setAllProducts(res.data))
             .catch((err) => console.error("Error fetching products:", err));
+        setInput(props)
 
     }, []);
+
+    useEffect(() => {
+        // props are passed by the home page in in the sec-2 or sec-3 className
+        // If we pass the props then set props to the setInput 
+        setInput(props)
+    }, [props])
 
 
 
@@ -33,12 +43,14 @@ function AllCards() {
 
 
     function renderCard() {
-        return allProducts.filter(product => 
-        
+        return allProducts.filter(product =>
+            product.price <= (input) ||
+            product.detailed_description.toLowerCase().includes(input.toLowerCase()) ||
+            product.shoeType.toLowerCase().includes(input.toLowerCase()) ||
+            product.names.toLowerCase().includes(input.toLowerCase()) ||
             product.name.toLowerCase().includes(input.toLowerCase()) ||
-            product.category.toLowerCase().includes(input.toLowerCase()) 
-            // product.names.toLowerCase().includes(input.toLowerCase()) 
-        
+            product.category.toLowerCase().includes(input.toLowerCase())
+
         )
             .map((product) => (
                 <div className='card' key={product.id} >
@@ -52,7 +64,7 @@ function AllCards() {
                     <div className='avrageStar'><StarAvg id={product.id} /></div>
                     <div className='card-footer'>
                         <div className="card-price">INR {product.price}</div>
-                        <div className="add-to-cart">   
+                        <div className="add-to-cart">
                         </div>
                     </div>
                 </div>
@@ -63,9 +75,9 @@ function AllCards() {
         dispatch(searchBoxIsVisible(false))
     }
 
-    
+
     return (
-        <div className={`search-container ${searchContainer?("full-search"):("half-search")}`} >
+        <div className={`search-container ${searchContainer ? ("full-search") : ("half-search")}`} >
             <div className='searchBox' >
                 <div className='searchInput'>
                     <input type="text" placeholder='Search' value={input} onChange={(e) => setInput(e.target.value)} />
@@ -75,11 +87,11 @@ function AllCards() {
             </div>
             <div className='card-rows' >
                 {(!input) ? (
-                    <p style={{color:"grey", margin:"1rem"}}>
+                    <p style={{ color: "grey", margin: "1rem" }}>
                         Search for products,shoe styles, product collections / categories or key words
                     </p>) : (renderCard())}
             </div>
         </div>
     )
 }
-export default AllCards;
+export default Search;

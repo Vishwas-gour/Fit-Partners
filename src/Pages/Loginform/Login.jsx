@@ -1,5 +1,6 @@
 import axios from 'axios';
 import '../css/login.css';
+import '../css/admin.css';
 import { useEffect, useState } from 'react';
 import { otpGenerator } from '../../Functions/starPrint';
 import { useNavigate } from 'react-router-dom';

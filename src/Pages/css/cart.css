@@ -125,26 +125,6 @@
     background: rgba(253, 254, 252, 0.731);
 }
 
-/* ================= [ Price Detail ] ================= */
-.price-detail {
-    background-color: rgb(129, 129, 234);
-    color: white;
-    padding: 15px;
-    border-radius: 20px;
-    width: 100%;
-    height: fit-content;
-    font-size: 1.2rem;
-    position: sticky;
-    top:5rem;
-}
-
-.price-detail .detail {
-    margin: 1vw;
-    display: flex;
-    justify-content: space-between;
-}
-
-
 #wishlist .wishlist {
     margin: 1rem auto;
     display: flex;
@@ -170,6 +150,28 @@
     grid-template-columns: auto;
 
 }
+
+/* ================= [ Price Detail ] ================= */
+.price-detail {
+    background-color: rgb(129, 129, 234);
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+    width: 100%;
+    height: fit-content;
+    font-size: 1.2rem;
+    position: sticky;
+    top:5rem;
+}
+
+.price-detail .detail {
+    margin: 1vw;
+    display: flex;
+    justify-content: space-between;
+ 
+}
+
+
 
 /* ========== Responsive Design ========== */
 
@@ -247,6 +249,24 @@
 }
 
 @media (max-width:550px) {
+    .price-detail {
+        background-color: rgb(129, 129, 234);
+        color: white;
+        border-radius: 20px;
+        width: 95vw;
+        height: fit-content;
+
+        position:static;
+        font-size: 1em;
+    }
+    
+    .price-detail .detail {
+        margin: 1vw;
+        display: flex;
+        justify-content: space-between;
+     
+    }
+    
 
     .cart-cards {
         display: grid;

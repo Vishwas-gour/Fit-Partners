@@ -16,23 +16,30 @@ import Women from './Pages/Gender/Women.jsx';
 import Kids from './Pages/Gender/Kids.jsx';
 import AllCards from './Pages/Gender/AllCards.jsx';
 import Wishlist from './Pages/Wishlist.jsx';
+import Search from './NonOutlets/Search.jsx';
+import AdminPanel from './Pages/AdminPanel.jsx';
 function App() {
   return (
     <Router>
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="home" element={<Home />} />
+          {/* ⬇️ only for taking the props while click on home page section */}
+          <Route path="home" element={<Home />} /> 
+          <Route path="home/:props" element={<Home />} /> 
+
           <Route path="allProducts" element={<AllCards />} />
           <Route path="men" element={<Men />} />
           <Route path="women" element={<Women />} />
           <Route path="kids" element={<Kids />} />
+          <Route path="admin" element={<AdminPanel />} />
           <Route path="cart" element={<Cart />} />
           <Route path="wishlist" element={<Wishlist />} />
           
           <Route path="detailedProduct/:id" element={<DetailedProduct />} />
           <Route path="payment/:id" element={<Payment />} />
           <Route path="popup" element={<Popup />} />
+          <Route path="search/:?value" element={<Search />} />
 
           <Route path="login" element={<LoginForm />} />
           <Route path="forget" element={<Forget />} />

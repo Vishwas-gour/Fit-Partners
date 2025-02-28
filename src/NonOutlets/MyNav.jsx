@@ -89,7 +89,8 @@ function MyNav() {
                     <Link to="allProducts">Shoes</Link> |
                     <Link to="men">Men</Link> |
                     <Link to="women">Women</Link> |
-                    <Link to="kids">Kids</Link>
+                    <Link to="kids">Kids</Link> |
+                    <Link to="admin">Admin</Link> |
                 </ul>
                 <ul className='nav-item right'>
                     <button onClick={showSearchBox}><CiSearch /> </button>

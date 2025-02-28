@@ -1,18 +1,16 @@
 {
   "products": [
     {
-      "id": "12",
-      "quantity": 1,
-      "noOfReviews": 1,
-      "rating": 3,
       "name": "Yoga Flats",
       "price": 60,
-      "imgUrl": "https://m.media-amazon.com/images/I/719Z94XnoML._SY695_.jpg",
-      "about": "Flexible flats for yoga and light workouts.",
       "detailed_description": "Stretchable fabric with non-slip sole for indoor activities.",
-      "category": "women",
-      "names": "Yoga Flats, Workout Shoes, Flexible Flats",
-      "shoeType": "Flats",
+      "names": "Yoga Flats, Workout Shoes, Flexible Flats, Yoga Shoes, Women's Yoga Flats, Stretchy Flats, Indoor Workout Shoes, Non-Slip Yoga Shoes",
+      "discount": 20,
+      "priceAfterDiscount": 48,
+      "colors": [
+        "Gray",
+        "Purple"
+      ],
       "sizeRange": [
         5,
         6,
@@ -20,12 +18,14 @@
         8,
         9
       ],
-      "colors": [
-        "Gray",
-        "Purple"
-      ],
-      "discount": 20,
-      "priceAfterDiscount": 48
+      "category": "women",
+      "shoeType": "Flats",
+      "about": "Flexible flats for yoga and light workouts.",
+      "quantity": 1,
+      "noOfReviews": 1,
+      "rating": 3,
+      "id": "12",
+      "imgUrl": "https://m.media-amazon.com/images/I/719Z94XnoML._SY695_.jpg"
     },
     {
       "id": "1",
@@ -38,7 +38,7 @@
       "about": "Lightweight running shoes with cushioned support.",
       "detailed_description": "Breathable mesh upper, lightweight cushioning, and durable rubber outsole. Perfect for long runs and daily wear.",
       "category": "men",
-      "names": "AirMax Runner, Running Shoes, Sports Shoes, Athletic Wear",
+      "names": "AirMax Runner, Running Shoes, Sports Shoes, Athletic Wear, Men's Running Shoes,  Mens Running Shoes, Lightweight Running Shoes, Cushioned Running Shoes, Daily Running Shoes, Breathable Running Shoes",
       "shoeType": "Running",
       "sizeRange": [
         7,
@@ -57,7 +57,7 @@
     {
       "id": "2",
       "quantity": 1,
-      "noOfReviews": 1,
+      "noOfReviews": 5,
       "rating": 4,
       "name": "Trail Blazer",
       "price": 180,
@@ -65,7 +65,7 @@
       "about": "Rugged hiking shoes built for tough terrains.",
       "detailed_description": "Water-resistant upper, cushioned midsole, and tough grip outsole. Ideal for adventurous trails.",
       "category": "men",
-      "names": "Trail Blazer, Hiking Shoes, Outdoor Shoes, Adventure Gear",
+      "names": "Trail Blazer, Hiking Shoes, Outdoor Shoes, Adventure Gear, Men's Hiking Shoes, Rugged Hiking Shoes, Waterproof Hiking Shoes, Trail Shoes, Outdoor Adventure Shoes",
       "shoeType": "Hiking",
       "sizeRange": [
         8,
@@ -92,7 +92,7 @@
       "about": "Chic and stylish high heels for formal occasions.",
       "detailed_description": "Leather upper with padded insole for comfort. Sleek and elegant design.",
       "category": "women",
-      "names": "Elegant Heels, High Heels, Formal Wear, Party Shoes",
+      "names": "Elegant Heels, High Heels, Formal Wear, Party Shoes, Women's Heels, Stylish Heels, Leather Heels, Comfortable Heels, Evening Heels, Dress Heels",
       "shoeType": "Heels",
       "sizeRange": [
         5,
@@ -112,14 +112,14 @@
       "id": "3",
       "quantity": 1,
       "noOfReviews": 1,
-      "rating": 3,
+      "rating": 0,
       "name": "Urban Sneakers",
       "price": 120,
       "imgUrl": "https://redtape.com/cdn/shop/files/RSL0187_8_jpg.jpg?v=1740064795",
       "about": "Stylish sneakers for casual outings.",
       "detailed_description": "Comfortable fit with a sleek design, suitable for everyday wear.",
       "category": "men",
-      "names": "Urban Sneakers, Casual Shoes, Street Wear",
+      "names": "Urban Sneakers, Casual Shoes, Street Wear, Men's Sneakers, Everyday Sneakers, Comfortable Sneakers, Stylish Sneakers, Urban Street Shoes, Casual Footwear",
       "shoeType": "Casual",
       "sizeRange": [
         7,
@@ -145,7 +145,7 @@
       "about": "Classic formal shoes for business and events.",
       "detailed_description": "Premium leather finish with cushioned insoles for all-day comfort.",
       "category": "men",
-      "names": "Formal Elegance, Dress Shoes, Office Wear",
+      "names": "Formal Elegance, Dress Shoes, Office Wear, Men's Formal Shoes, Leather Dress Shoes, Business Shoes, Elegant Dress Shoes, Comfortable Formal Shoes, Classic Dress Shoes",
       "shoeType": "Formal",
       "sizeRange": [
         6,
@@ -173,7 +173,7 @@
       "about": "Casual loafers for a laid-back look.",
       "detailed_description": "Soft cushioning with a slip-on design for easy wear.",
       "category": "men",
-      "names": "Loafer Comfort, Slip-on Shoes, Casual Loafers",
+      "names": "Loafer Comfort, Slip-on Shoes, Casual Loafers, Men's Loafers, Comfortable Loafers, Slip-On Loafers, Everyday Loafers, Relaxed Loafers, Stylish Loafers",
       "shoeType": "Casual",
       "sizeRange": [
         7,
@@ -200,7 +200,7 @@
       "about": "Comfortable running shoes with responsive cushioning.",
       "detailed_description": "Breathable mesh, lightweight midsole, and durable grip outsole. Ideal for active lifestyles.",
       "category": "women",
-      "names": "AirMax Swift, Running Shoes, Sports Shoes, Athletic Wear",
+      "names": "AirMax Swift, Running Shoes, Sports Shoes, Athletic Wear, Women's Running Shoes, Lightweight Running Shoes, Cushioned Running Shoes, Daily Running Shoes, Breathable Running Shoes",
       "shoeType": "Running",
       "sizeRange": [
         5,
@@ -227,7 +227,7 @@
       "about": "Comfortable flip-flops for the beach.",
       "detailed_description": "Water-resistant material and soft sole, perfect for summer days.",
       "category": "men",
-      "names": "Beach Flip-Flops, Sandals, Summer Wear",
+      "names": "Beach Flip-Flops, Sandals, Summer Wear, Men's Flip-Flops, Waterproof Flip-Flops, Comfortable Flip-Flops, Summer Sandals, Beach Sandals, Casual Flip-Flops",
       "shoeType": "Flip-Flops",
       "sizeRange": [
         7,
@@ -254,7 +254,7 @@
       "about": "Classic boots with a vintage touch.",
       "detailed_description": "Durable leather with rugged soles, stylish and functional.",
       "category": "men",
-      "names": "Vintage Boots, Leather Boots, Classic Footwear",
+      "names": "Vintage Boots, Leather Boots, Classic Footwear, Men's Boots, Rugged Boots, Stylish Boots, Vintage Leather Boots, Durable Boots, Outdoor Boots",
       "shoeType": "Boots",
       "sizeRange": [
         8,
@@ -281,7 +281,7 @@
       "about": "High-performance trainers for the gym.",
       "detailed_description": "Breathable fabric, flexible sole, and excellent grip for intense workouts.",
       "category": "men",
-      "names": "SportFlex Trainer, Gym Shoes, Workout Sneakers",
+      "names": "SportFlex Trainer, Gym Shoes, Workout Sneakers, Men's Training Shoes, High-Performance Trainers, Gym Trainers, Workout Shoes, Athletic Trainers, Fitness Shoes",
       "shoeType": "Training",
       "sizeRange": [
         7,
@@ -308,7 +308,7 @@
       "about": "Versatile sneakers for everyday comfort.",
       "detailed_description": "Soft canvas material with cushioned insole. Durable rubber outsole.",
       "category": "women",
-      "names": "Casual Sneakers, Daily Wear, Comfort Shoes",
+      "names": "Casual Sneakers, Daily Wear, Comfort Shoes, Women's Sneakers, Everyday Sneakers, Comfortable Sneakers, Canvas Sneakers, Stylish Sneakers, Casual Footwear",
       "shoeType": "Sneakers",
       "sizeRange": [
         5,
@@ -336,7 +336,7 @@
       "about": "Warm and cozy boots for cold weather.",
       "detailed_description": "Faux fur lining with waterproof exterior. Ideal for snowy conditions.",
       "category": "women",
-      "names": "Winter Boots, Snow Boots, Warm Shoes",
+      "names": "Winter Boots, Snow Boots, Warm Shoes, Women's Boots, Waterproof Boots, Cozy Boots, Snowy Weather Boots, Faux Fur Boots, Cold Weather Boots",
       "shoeType": "Boots",
       "sizeRange": [
         5,
@@ -363,7 +363,7 @@
       "about": "Comfortable sandals for beach outings.",
       "detailed_description": "Lightweight and water-resistant with cushioned footbed.",
       "category": "women",
-      "names": "Beach Sandals, Flip Flops, Summer Shoes",
+      "names": "Beach Sandals, Flip Flops, Summer Shoes, Women's Sandals, Comfortable Sandals, Waterproof Sandals, Summer Flip Flops, Casual Sandals, Beach Footwear",
       "shoeType": "Sandals",
       "sizeRange": [
         5,
@@ -390,7 +390,7 @@
       "about": "Elegant loafers perfect for office wear.",
       "detailed_description": "Genuine leather with cushioned sole for all-day comfort.",
       "category": "women",
-      "names": "Office Loafers, Formal Shoes, Work Wear",
+      "names": "Office Loafers, Formal Shoes, Work Wear, Women's Loafers, Leather Loafers, Comfortable Loafers, Elegant Loafers, Business Loafers, Professional Loafers",
       "shoeType": "Loafers",
       "sizeRange": [
         5,
@@ -417,7 +417,7 @@
       "about": "Durable boots for hiking and trekking.",
       "detailed_description": "Water-resistant with a rugged outsole for tough terrains.",
       "category": "women",
-      "names": "Hiking Boots, Outdoor Shoes, Trekking Boots",
+      "names": "Hiking Boots, Outdoor Shoes, Trekking Boots, Women's Hiking Boots, Waterproof Hiking Boots, Rugged Boots, Adventure Boots, Trail Boots, Durable Hiking Boots",
       "shoeType": "Boots",
       "sizeRange": [
         5,
@@ -444,7 +444,7 @@
       "about": "Lightweight running shoes for active kids.",
       "detailed_description": "Breathable mesh upper with cushioned sole for comfort. Ideal for playground and sports activities.",
       "category": "kids",
-      "names": "Mini Runner, Kids Running Shoes, Sports Shoes, Athletic Wear",
+      "names": "Mini Runner, Kids Running Shoes, Sports Shoes, Athletic Wear, Children's Running Shoes, Lightweight Kids Shoes, Playground Shoes, Active Kids Shoes, Comfortable Kids Shoes",
       "shoeType": "Running",
       "sizeRange": [
         1,
@@ -471,7 +471,7 @@
       "about": "Durable sneakers for energetic play.",
       "detailed_description": "Flexible sole with easy Velcro strap. Designed for comfort and support during active movements.",
       "category": "kids",
-      "names": "Little Sprinter, Kids Sneakers, Play Shoes",
+      "names": "Little Sprinter, Kids Sneakers, Play Shoes, Children's Sneakers, Durable Kids Shoes, Active Kids Sneakers, Velcro Sneakers, Comfortable Kids Sneakers, Everyday Kids Shoes",
       "shoeType": "Sneakers",
       "sizeRange": [
         1,
@@ -498,7 +498,7 @@
       "about": "Comfortable walking shoes for everyday wear.",
       "detailed_description": "Soft cushioning with durable outsole. Perfect for daily adventures.",
       "category": "kids",
-      "names": "Tiny Trekker, Kids Walking Shoes, Casual Shoes",
+      "names": "Tiny Trekker, Kids Walking Shoes, Casual Shoes, Children's Walking Shoes, Comfortable Kids Shoes, Everyday Kids Shoes, Durable Kids Shoes, Active Kids Shoes, Playtime Shoes",
       "shoeType": "Walking",
       "sizeRange": [
         1,
@@ -526,7 +526,7 @@
       "about": "High-energy shoes for jumping and playing.",
       "detailed_description": "Springy midsole for extra bounce. Designed to absorb impact and protect growing feet.",
       "category": "kids",
-      "names": "Junior Jumper, Kids Active Shoes, Playtime Sneakers",
+      "names": "Junior Jumper, Kids Active Shoes, Playtime Sneakers, Children's Active Shoes, Bouncy Kids Shoes, Comfortable Kids Shoes, Playground Shoes, Energetic Kids Shoes, Jumping Shoes",
       "shoeType": "Active",
       "sizeRange": [
         2,
@@ -553,7 +553,7 @@
       "about": "Stylish shoes for school and play.",
       "detailed_description": "Durable design with easy on-and-off features. Comfortable fit for long hours of wear.",
       "category": "kids",
-      "names": "Playground Pro, Kids Casual Shoes, Everyday Wear",
+      "names": "Playground Pro, Kids Casual Shoes, Everyday Wear, Children's Casual Shoes, Stylish Kids Shoes, Durable Kids Shoes, Comfortable Kids Shoes, School Shoes, Playtime Shoes",
       "shoeType": "Casual",
       "sizeRange": [
         1,
@@ -580,7 +580,7 @@
       "about": "Comfortable sandals for summer adventures.",
       "detailed_description": "Breathable straps with cushioned footbed. Ideal for beach trips and outdoor play.",
       "category": "kids",
-      "names": "Explorer Sandals, Kids Sandals, Summer Shoes",
+      "names": "Explorer Sandals, Kids Sandals, Summer Shoes, Children's Sandals, Comfortable Sandals, Beach Sandals, Outdoor Sandals, Playtime Sandals, Summer Footwear",
       "shoeType": "Sandals",
       "sizeRange": [
         1,
@@ -606,7 +606,7 @@
       "about": "Easy-to-wear slip-ons for active days.",
       "detailed_description": "Elastic fit with lightweight design. Ideal for quick on-the-go moments.",
       "category": "kids",
-      "names": "Sporty Slip-Ons, Kids Slip-On Shoes, Active Footwear",
+      "names": "Sporty Slip-Ons, Kids Slip-On Shoes, Active Footwear, Children's Slip-Ons, Comfortable Slip-Ons, Easy-to-Wear Shoes, Playtime Slip-Ons, Everyday Slip-Ons, Lightweight Slip-Ons",
       "shoeType": "Slip-On",
       "sizeRange": [
         1,
@@ -633,7 +633,7 @@
       "about": "Rugged boots for exploring the outdoors.",
       "detailed_description": "Water-resistant upper with rugged sole. Perfect for hiking and outdoor adventures.",
       "category": "kids",
-      "names": "Adventure Boots, Kids Hiking Boots, Outdoor Shoes",
+      "names": "Adventure Boots, Kids Hiking Boots, Outdoor Shoes, Children's Boots, Rugged Boots, Waterproof Boots, Durable Boots, Outdoor Adventure Boots, Hiking Footwear",
       "shoeType": "Boots",
       "sizeRange": [
         2,
@@ -875,6 +875,42 @@
       "like": 0,
       "dislike": 4,
       "star": 1
+    },
+    {
+      "id": "8f23",
+      "comment": "nice pro",
+      "gmail": "vishwasgour@gmail.com",
+      "productId": 2,
+      "like": 0,
+      "dislike": 0,
+      "star": 3
+    },
+    {
+      "id": "18e0",
+      "comment": "a1",
+      "gmail": "vishwasgour@gmail.com",
+      "productId": 2,
+      "like": 0,
+      "dislike": 0,
+      "star": 5
+    },
+    {
+      "id": "2e3e",
+      "comment": "amezing",
+      "gmail": "vishwasgour@gmail.com",
+      "productId": 2,
+      "like": 0,
+      "dislike": 0,
+      "star": 5
+    },
+    {
+      "id": "02a2",
+      "comment": "123",
+      "gmail": "vishwasgour@gmail.com",
+      "productId": 2,
+      "like": 0,
+      "dislike": 0,
+      "star": 3
     }
   ]
 }
