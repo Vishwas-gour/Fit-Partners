@@ -15,7 +15,7 @@ function StarAvg({ id }) {
             setData(res.data);
              
              let cardData = res.data;
-             let length = res.data.length;
+             let length = cardData.length;
             // Traverval on review id
             setTotalStars(cardData.reduce((accu, cValue) => accu + +(cValue.star), 0));
             // If responce length == 0 then patch API not resolve
