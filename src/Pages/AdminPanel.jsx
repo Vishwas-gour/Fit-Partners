@@ -5,6 +5,7 @@ import axios from 'axios'
 function AdminPanel() {
   let [postData, setPostData] = useState({ "quantity": 1, "noOfReviews": 0, "rating": 0 })
   let [inputCategory, setInputCategory] = useState("men")
+  // let [imgURL, setImgURL] = useState()
   let [selectColor, setSelectColor] = useState({ "Red": false, "Green": false, "Blue": false, "Yellow": false, "Black": false, "White": false })
   let [selectSize, setSelectSize] = useState({ "6": false, "7": false, "8": false, "9": false, "10": false, "5": false });
   const api = `http://localhost:3000/products`;
@@ -15,7 +16,7 @@ function AdminPanel() {
     "kids": ["sneakers", "boots", "sandals", "slions"]
   }
   const colors = ["Red", "Green", "Blue", "Yellow", "Black", "White"];
-  const sizes = ["5", "6", "7", "8", "9", "10"];
+  const sizes = [5, 6, 7, 8, 9, 10];
 
   function handleColorChange(e) {
     const name = e.target.name;
@@ -35,37 +36,40 @@ function AdminPanel() {
     setPostData(pre => ({ ...pre, [name]: value }))
   }
   function confirmChanges() {
-    let finalColor = Object.keys(selectColor).filter(key => selectColor[key] == true );
-    let finalSize = Object.keys(selectSize).filter(key => selectSize[key] == true );
-    setPostData(pre => ({ ...pre, color: finalColor, size:finalSize }))
+    let finalColor = Object.keys(selectColor).filter(key => selectColor[key] == true);
+    let finalSize = Object.keys(selectSize).filter(key => selectSize[key] == true);
+    let priceAfterDiscount = parseInt(postData.price - (postData.price * postData?.discount / 100))
+    setPostData(pre => ({ ...pre, colors: finalColor, sizeRange: finalSize, priceAfterDiscount: priceAfterDiscount, category: inputCategory }))
     console.log(postData)
   }
-  function postDataFunc(){
-    axios.post(api, postData).then((res)=>{
+  function postDataFunc() {
+    axios.post(api, postData).then((res) => {
       console.log(res)
     }).catch(err => console.log(err))
   }
 
-
+  function makeURL(e) {
+    const file = e.target.files[0];
+    console.log(file)
+    const reader = new FileReader();
+    reader.readAsDataURL(file)
+    reader.onload = () => {
+      setPostData(pre => ({...pre, "imgUrl":reader.result}))
+    }
+    reader.onerror = (error) => console.log(error);
+  }
 
   return (
     <div className='login_form'>
-      {/* =================[Name]=============================== */}
       <input onChange={handleInputs} type="text" name='name' placeholder='name' />
-      {/* =================[detailed]============================ */}
-      <input onChange={handleInputs} type="text" name='detailed_description' placeholder='detailed_description' />
-      {/* =================[names]=============================== */}
+      <input onChange={handleInputs} type="text" name='detailed_description' placeholder='Full Description' />
       <input onChange={handleInputs} type="text" name='names' placeholder='names' />
-      {/* =================[discount %]========================== */}
       <input onChange={handleInputs} type="text" name='price' placeholder='price' />
-      {/* =================[price]=============================== */}
       <input onChange={handleInputs} type="text" name='discount' placeholder='discount' />
-      {/* =================[price after discount]================ */}
-      <input onChange={handleInputs} type="text" name='priceAfterDiscount' placeholder='priceAfterDiscount'
-        value={parseInt(postData.price - (postData.price * postData?.discount / 100))} />
-      {/* =================[about]================ */}
+      {/* IMAGE============================== */}
       <input onChange={handleInputs} type="text" name='about' placeholder='about' />
-      {/* ==================[Category]========================== */}
+      <input onChange={handleInputs} type="text" name='imgUrl' placeholder='Image url' />
+      <input onChange={makeURL} type="file" name='imgUrl' />
       <label>Shoe Category:</label>
       <select name="category" onChange={(e) => setInputCategory(e.target.value)}>
         <option value="men">Men</option>
@@ -74,7 +78,7 @@ function AdminPanel() {
       </select><br />
       {/* ====================[Type]============================ */}
       <label>Shoe Type:</label>
-      <select name="shoes">
+      <select name="shoeType" onChange={handleInputs}>
         {category[inputCategory].map((val) => <option key={val} value={val}>{val}</option>)}
       </select><br />
       {/* ====================[Color]=========================== */}
@@ -98,6 +102,7 @@ function AdminPanel() {
       <br />
       <button onClick={confirmChanges}>Confirm</button>
       <button onClick={postDataFunc}>Post data</button>
+
 
     </div>
   )
