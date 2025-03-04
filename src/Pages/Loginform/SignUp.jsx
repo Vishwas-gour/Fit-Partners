@@ -1,14 +1,19 @@
 import { useState } from "react";
 import { otpGenerator } from "../../Functions/starPrint";
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { message, Modal } from "antd";
 function LoginForm() {
+  const { login } = useParams();
+  console.log(login)
+
   const navigate = useNavigate();
   const [showLoginOrOTP, setShowLoginOrOTP] = useState(true);
   const [otp, setOtp] = useState({ "inputOtp": "", "sendedOtp": "" });
   const [formInfo, setFormInfo] = useState({ "name": "", "address": "", "gmail": "", "password": "", "passwordcnf": "" });
-  const loginInfoApi = `http://localhost:3000/loginInfo`;
+  const loginInfoApi = `http://localhost:3000/${login}`;
+
+
 
   function handleInput(e) {
     let name = e.target.name.toLowerCase();
@@ -18,11 +23,16 @@ function LoginForm() {
 
   function checkOtp() {
     if (otp.inputOtp == otp.sendedOtp) {
-      // ---------> Because I dont'w want to store passwordcnf in   
+      // ---------> Because I dont'w want to store passwordcnf in  
+      const currentDate = new Date().toLocaleDateString("en-US", {
+        month: "long",
+        day: "numeric",
+        year: "numeric",
+      });
       delete formInfo.passwordcnf;
-      axios.post(loginInfoApi,  formInfo)
+      axios.post(loginInfoApi, { ...formInfo, date: currentDate })
       message.success("Account succesfuly created")
-      navigate('/login');
+      navigate(`/login/${login}`);
     } else {
       message.error("wrong otp try again")
     }
@@ -39,9 +49,9 @@ function LoginForm() {
       Modal.confirm({
         title: "you have already an acount try to login",
         onOk() {
-          navigate('/login')
+          navigate(`/login/${login}`)
         }
-    });
+      });
       return;
     }
     else if (!formInfo.name || !formInfo.address || !formInfo.gmail || !formInfo.password || !formInfo.passwordcnf) {
@@ -80,6 +90,52 @@ function LoginForm() {
             <div className="address">   <label htmlFor="address">Address</label>  </div>
             <input type="text" id="address" name="address" placeholder="Enter Address" onChange={handleInput} />
           </div>
+
+          {(login == "employeeLogin") ?
+            (<>
+              <div className="input_box">
+                <div className="phone">   <label htmlFor="phone">Phone</label>  </div>
+                <input type="text" id="phone" name="phone" placeholder="Enter Phone Number" onChange={handleInput} />
+              </div>
+              <div className="input_box">
+                <div className="img">   <label htmlFor="img">Phone</label>  </div>
+                <input type="text" id="img" name="img" placeholder="Image url" onChange={handleInput} />
+              </div>
+
+              <div className="input_box">
+                <div className="department">
+                  <label htmlFor="department">Department</label>
+                </div>
+                <select id="department" name="department" onChange={handleInput}>
+                  <option value="">Select Department</option>
+                  <option value="HR">HR</option>
+                  <option value="Finance">Finance</option>
+                  <option value="Engineering">Engineering</option>
+                  <option value="Marketing">Marketing</option>
+                </select>
+              </div>
+
+
+              <h1>Social Link</h1>
+              <div className="input_box">
+                <div className="git">   <label htmlFor="git">Git URL</label>  </div>
+                <input type="text" id="git" name="git" placeholder="Your git Profile" onChange={handleInput} />
+              </div>
+              <div className="input_box">
+                <div className="linkedin">   <label htmlFor="linkedin">Linkedin URL</label>  </div>
+                <input type="text" id="linkedin" name="linkedin" placeholder="Your linkedin" onChange={handleInput} />
+              </div>
+              <div className="input_box">
+                <div className="bio">   <label htmlFor="bio">Bio</label>  </div>
+                <input type="text" id="bio" name="bio" placeholder="Your bio here" onChange={handleInput} />
+              </div>
+           
+            </>)
+            : (<></>)}
+
+
+
+
           <div className="input_box">
             <div className="forget-password">   <label htmlFor="password">Password</label>   </div>
             <input type="password" id="password" name="password" placeholder="Create password" onChange={handleInput} />

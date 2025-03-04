@@ -33,12 +33,17 @@
     display: grid;
     gap: 0.3rem;
     max-height: 30rem;
+    min-height: 20rem;
     overflow: scroll;
     scrollbar-width: thin;
     overflow-x: hidden;
     padding: 2rem;
 }
-
+.all-review .no-item{
+    background-color: white;
+    border-top: 1px solid rgb(185, 185, 185);
+    width: 100%;
+}
 .all-review-heading {
     display: flex;
     justify-content:center;

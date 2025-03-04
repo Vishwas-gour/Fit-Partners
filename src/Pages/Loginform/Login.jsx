@@ -1,24 +1,24 @@
 import axios from 'axios';
 import '../css/login.css';
-import '../css/admin.css';
 import { useEffect, useState } from 'react';
 import { otpGenerator } from '../../Functions/starPrint';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { currentUserInfo } from '../../Redux/CartSlice'
+import { currentUserInfo, setWhoLogin } from '../../Redux/CartSlice'
 import { message, Modal } from 'antd';
 
 
 function LoginForm() {
   const dispatch = useDispatch();
-
+  const {login} = useParams();
   const [formInfo, setFormInfo] = useState({ "gmail": "", "password": "" });
+  
 
   const [otp, setOtp] = useState({ "inputOtp": "", "sendedOtp": "" });
   const [users, setUsers] = useState(null);
   const [showLoginOrOTP, setShowLoginOrOTP] = useState(true);
   const navigate = useNavigate();
-  const usersApi = `http://localhost:3000/loginInfo`
+  const usersApi = `http://localhost:3000/${login}`
 
   function loadUserInfo() {
     axios.get(usersApi).then((res) => {
@@ -37,7 +37,7 @@ function LoginForm() {
   }
 
   async function checkVelidation() {
-    const userAPI = `http://localhost:3000/loginInfo/?gmail=${formInfo.gmail}`
+    const userAPI = `http://localhost:3000/${login}/?gmail=${formInfo.gmail}`
     const res = await axios.get(userAPI);
     if (!formInfo.gmail || !formInfo.password) {
       message.warning("all fielt are mendotary");
@@ -50,7 +50,7 @@ function LoginForm() {
         Modal.confirm({
           title:"you don,t have an account, create new one",
           onOk() {
-              navigate('/signUp')
+              navigate(`/signUp/${login}`)
           },
       });
  return;
@@ -83,12 +83,17 @@ function LoginForm() {
   async function checkOtp() {
     if (otp.inputOtp == otp.sendedOtp) {
       // set info to currentUserInfo
-      const userAPI = `http://localhost:3000/loginInfo/?gmail=${formInfo.gmail}`
+      const userAPI = `http://localhost:3000/${login}/?gmail=${formInfo.gmail}`
       const res = await axios.get(userAPI);
 
       dispatch(currentUserInfo(res.data[0]));
+      dispatch(setWhoLogin(login))
       message.success("login succesfuly")
-      navigate('/home');
+      // ===================================
+      if(login == "employeeLogin"){
+        navigate(`/adminProfile/${formInfo.gmail}`)
+      }
+      else navigate('/home');
     } else {
       message.error("wrong otp try again")
     }
@@ -119,7 +124,7 @@ function LoginForm() {
             <input type="text" id="gmail" name="gmail" placeholder="Enter email address"
               onChange={(e) => handleInput(e)} value={formInfo.gmail} /> </div>
           <div className="input_box">
-            <div className="forget-password">   <label htmlFor="password">Password</label>   <a href="#" onClick={() => navigate('/forget')}>Forgot Password?</a>   </div>
+            <div className="forget-password">   <label htmlFor="password">Password</label>   <a href="#" onClick={() => navigate(`/forget/${login}`)}>Forgot Password?</a>   </div>
             <input type="password" id="password" name="password" placeholder="Enter your password"
               onChange={(e) => handleInput(e)} value={formInfo.password} />
           </div>
@@ -132,7 +137,7 @@ function LoginForm() {
               </div>
             )}
           <p className="sign_up">
-            Don&apos;t have an account? <a href="#" onClick={() => navigate('/signUp')}>Sign up</a>
+            Don&apos;t have an account? <a href="#" onClick={() => navigate(`/signUp/${login}`)}>Sign up</a>
           </p>
         </form>
       </div>

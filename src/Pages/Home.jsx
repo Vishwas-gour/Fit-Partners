@@ -1,13 +1,13 @@
 import Slide from '../Components/Slide'
 import './css/home.css'
 import { useNavigate } from 'react-router-dom'
-import { useDispatch } from 'react-redux';
+import { useDispatch} from 'react-redux';
 import { searchBoxIsVisible } from '../Redux/CartSlice';
 function Home() {
 
     const navigate = useNavigate();
     const dispatch = useDispatch();
-
+   
     function openSearchBox(value) {
         dispatch(searchBoxIsVisible(true));
         navigate(`/home/${value}`)

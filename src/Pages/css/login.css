@@ -1,30 +1,30 @@
 .login_form {
     width: 90%;
     max-width: 600px;
-    padding: 1rem 5.3rem;
+    padding: 1rem 3rem;
     background: #fff;
     border-radius: 5% 0px 0px 5%;
     box-shadow: 10px 10px 20px rgba(64, 64, 64, 0.15);
-    margin: auto;
+    margin: 2rem auto;
     border: 1px solid rgb(184, 184, 184);
     max-height: 570px;
     min-height: fit-content;
-
-    overflow: scroll;
     scrollbar-width: thin;
     transition: scale 0.23s ease;
 }
-/* .login_form:hover {
-scale: 1.02;
-} */
+@media (max-width:500px) {
+    .login_form{
+        padding: 2rem;
+    }
+}
 
-.login_form h3 {
+form h3 {
     font-size: 20px;
     text-align: center;
     margin: 1rem;
 }
 
-.login_form .login_option {
+form .login_option {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -35,7 +35,7 @@ scale: 1.02;
     width: fit-content;
 }
 
-.login_form .login_option .option a {
+form .login_option .option a {
     height: 56px;
     display: flex;
     justify-content: space-evenly;
@@ -51,33 +51,32 @@ scale: 1.02;
     padding: 1vw;
 }
 
-.login_form .login_option .option a:hover {
+form  .login_option .option a:hover {
     background: #ededf5;
     border-color: #626cd6;
 }
 
-.login_form .login_option .option a img {
+form  .login_option .option a img {
     max-width: 25px;
 }
 
-.login_form p {
+form p {
     text-align: center;
     font-weight: 500;
 }
 
-.login_form .separator {
+form .separator {
     position: relative;
     margin-bottom: 24px;
 }
 
 /* Login option separator styling */
-.login_form .separator span {
+form .separator span {
     background: #fff;
     z-index: 1;
     padding: 0 10px;
     position: relative;
 }
-
 
 
 form .input_box label {
@@ -86,7 +85,7 @@ form .input_box label {
 }
 
 /*   <<<<<<< Input field styling  <<<<<<<  */
-input {
+form input {
     width: 100%;
     border: 1px solid #DADAF2;
     border-radius: 5px;
@@ -189,9 +188,20 @@ form #forget_page {
     transition: all 0.3s ease;
 }
 
-form form input:hover {
+form input {
+    margin-bottom: 0.7rem;
     border: 1px solid rgb(193, 193, 193);
-    box-shadow: 4px 4px 7px 2px rgb(224, 224, 224);
+    box-shadow: 4px 4px 7px 2px rgb(247, 247, 247);
+}
+
+form input:hover {
+    border: 1px solid rgb(193, 193, 193);
+    box-shadow: 4px 4px 7px 2px rgb(247, 247, 247);
+}
+
+form input:hover {
+    border: 1px solid rgb(193, 193, 193);
+    box-shadow: 4px 4px 7px 2px rgb(247, 247, 247);
 }
 
 /* ================[ AFTER COPY ]================ */

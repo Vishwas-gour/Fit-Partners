@@ -2,9 +2,10 @@ import { message, Modal } from 'antd';
 import { useState } from "react";
 import { otpGenerator } from "../../Functions/starPrint";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 function Forget() {
+    const { login } = useParams();
 
     const [visibleReque, setVisibleReque] = useState(true);
     const [visibleOtp, setVisibleOtp] = useState(false);
@@ -12,7 +13,7 @@ function Forget() {
 
     const [otp, setOtp] = useState({ "inputOtp": "", "sendedOtp": "" });
     const [formInfo, setFormInfo] = useState({ "gmail": "", "password": "", "passwordcnf": "" })
-    const loginInfoApi = `http://localhost:3000/loginInfo`;
+    const loginInfoApi = `http://localhost:3000/${login}`;
 
     const navigate = useNavigate();
     function handleSubmit(e) {
@@ -42,7 +43,7 @@ function Forget() {
             Modal.confirm({
                 title:"you don,t have an account, create new one",
                 onOk() {
-                    navigate('/signUp')
+                    navigate(`/signUp/${login}`)
                 }
             });
             return;
@@ -67,17 +68,17 @@ function Forget() {
         }
         else {
             // ==================[PASSWORD UPDATED]==================
-            let api = `http://localhost:3000/loginInfo/?gmail=${formInfo.gmail}`;
+            let api = `http://localhost:3000/${login}/?gmail=${formInfo.gmail}`;
             const res = await axios.get(api);
             const id = res.data[0].id;
-            let apiId = `http://localhost:3000/loginInfo/${id}`;
+            let apiId = `http://localhost:3000/${login}/${id}`;
 
             // eslint-disable-next-line no-unused-vars
             axios.patch(apiId, { password: formInfo.password }).then(res => {
                 message.success("Password succesfuly updated")
             });
 
-            navigate('/login')
+            navigate(`/login/${login}`)
         }
     }
 
@@ -117,9 +118,6 @@ function Forget() {
                             <button onClick={checkPassword}>Update Password</button>
                         </>
                     ) : (<> </>)}
-
-
-
                 </form>
             </div>
         </div>

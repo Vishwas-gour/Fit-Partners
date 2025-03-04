@@ -22,15 +22,15 @@
       "shoeType": "Flats",
       "about": "Flexible flats for yoga and light workouts.",
       "quantity": 1,
-      "noOfReviews": 1,
-      "rating": 3,
+      "noOfReviews": 2,
+      "rating": 4,
       "id": "12",
       "imgUrl": "https://m.media-amazon.com/images/I/719Z94XnoML._SY695_.jpg"
     },
     {
       "id": "1",
       "quantity": 1,
-      "noOfReviews": 1,
+      "noOfReviews": 2,
       "rating": 5,
       "name": "AirMax Runner",
       "price": 150,
@@ -57,26 +57,23 @@
     {
       "id": "2",
       "quantity": 1,
-      "noOfReviews": 5,
-      "rating": 4,
-      "name": "Trail Blazer",
+      "noOfReviews": 6,
+      "rating": 4.2,
+      "name": "Trail Blazer Shoes",
       "price": 180,
       "imgUrl": "https://redtape.com/cdn/shop/files/RSO4330A_1..jpg?v=1740073683",
       "about": "Rugged hiking shoes built for tough terrains.",
       "detailed_description": "Water-resistant upper, cushioned midsole, and tough grip outsole. Ideal for adventurous trails.",
       "category": "men",
       "names": "Trail Blazer, Hiking Shoes, Outdoor Shoes, Adventure Gear, Men's Hiking Shoes, Rugged Hiking Shoes, Waterproof Hiking Shoes, Trail Shoes, Outdoor Adventure Shoes",
-      "shoeType": "Hiking",
+      "shoeType": "running",
       "sizeRange": [
-        8,
-        9,
-        10,
-        11,
-        12
+        "11",
+        "12"
       ],
       "colors": [
-        "Brown",
-        "Green"
+        "White",
+        "Brown"
       ],
       "discount": 15,
       "priceAfterDiscount": 153
@@ -84,8 +81,8 @@
     {
       "id": "10",
       "quantity": 1,
-      "noOfReviews": 1,
-      "rating": 4,
+      "noOfReviews": 2,
+      "rating": 4.5,
       "name": "Elegant Heels",
       "price": 180,
       "imgUrl": "https://m.media-amazon.com/images/I/510+P+rn2kL._SX679_PIbundle-4,TopRight,0,0_AA679SH20_.jpg",
@@ -111,8 +108,8 @@
     {
       "id": "3",
       "quantity": 1,
-      "noOfReviews": 2,
-      "rating": 4,
+      "noOfReviews": 3,
+      "rating": 4.3,
       "name": "Urban Sneakers",
       "price": 120,
       "imgUrl": "https://redtape.com/cdn/shop/files/RSL0187_8_jpg.jpg?v=1740064795",
@@ -137,7 +134,7 @@
     {
       "id": "4",
       "quantity": 1,
-      "noOfReviews": 1,
+      "noOfReviews": 2,
       "rating": 5,
       "name": "Formal Elegance",
       "price": 200,
@@ -165,7 +162,7 @@
     {
       "id": "6",
       "quantity": 1,
-      "noOfReviews": 1,
+      "noOfReviews": 2,
       "rating": 5,
       "name": "Loafer Comfort",
       "price": 130,
@@ -192,8 +189,8 @@
     {
       "id": "9",
       "quantity": 1,
-      "noOfReviews": 1,
-      "rating": 4,
+      "noOfReviews": 2,
+      "rating": 4.5,
       "name": "AirMax Swift",
       "price": 140,
       "imgUrl": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/695697f10f154c34825f5fc9c1a59f69_9366/Messi_F50_League_Firm-Multi-Ground_Boots_Gold_IG9274_HM1.jpg",
@@ -219,8 +216,8 @@
     {
       "id": "7",
       "quantity": 1,
-      "noOfReviews": 1,
-      "rating": 2,
+      "noOfReviews": 2,
+      "rating": 3.5,
       "name": "Beach Flip-Flops",
       "price": 50,
       "imgUrl": "https://redtape.com/cdn/shop/files/RFF1154A_1_jpg_00d1f04f-f7b0-4eff-83fc-47a37646de74.jpg?v=1740075555&width=990",
@@ -246,8 +243,8 @@
     {
       "id": "8",
       "quantity": 1,
-      "noOfReviews": 1,
-      "rating": 4,
+      "noOfReviews": 2,
+      "rating": 4.5,
       "name": "Vintage Boots",
       "price": 250,
       "imgUrl": "https://redtape.com/cdn/shop/files/RTE3194B_1_jpg.jpg?v=1740088012",
@@ -273,8 +270,8 @@
     {
       "id": "5",
       "quantity": 1,
-      "noOfReviews": 1,
-      "rating": 3,
+      "noOfReviews": 2,
+      "rating": 4,
       "name": "SportFlex Trainer",
       "price": 140,
       "imgUrl": "https://redtape.com/cdn/shop/files/OZC0277_1.jpg?v=1740074218",
@@ -300,7 +297,7 @@
     {
       "id": "11",
       "quantity": 1,
-      "noOfReviews": 1,
+      "noOfReviews": 2,
       "rating": 5,
       "name": "Casual Sneakers",
       "price": 90,
@@ -328,8 +325,8 @@
     {
       "id": "13",
       "quantity": 1,
-      "noOfReviews": 1,
-      "rating": 2,
+      "noOfReviews": 2,
+      "rating": 3.5,
       "name": "Winter Boots",
       "price": 200,
       "imgUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/d/x/h/6-ts-511-blk-6-flopsie-black-original-imah6u7gpbcfvwf5.jpeg?q=70",
@@ -355,7 +352,7 @@
     {
       "id": "14",
       "quantity": 1,
-      "noOfReviews": 1,
+      "noOfReviews": 2,
       "rating": 5,
       "name": "Beach Sandals",
       "price": 50,
@@ -382,8 +379,8 @@
     {
       "id": "15",
       "quantity": 1,
-      "noOfReviews": 1,
-      "rating": 3,
+      "noOfReviews": 2,
+      "rating": 4,
       "name": "Office Loafers",
       "price": 130,
       "imgUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/v/8/x/5-fst-fjdwc-7003-black-38-fausto-black-original-imah8mpexczgmzsf.jpeg?q=70",
@@ -409,7 +406,7 @@
     {
       "id": "16",
       "quantity": 1,
-      "noOfReviews": 1,
+      "noOfReviews": 2,
       "rating": 5,
       "name": "Hiking Boots",
       "price": 220,
@@ -436,8 +433,8 @@
     {
       "id": "17",
       "quantity": 1,
-      "noOfReviews": 1,
-      "rating": 2,
+      "noOfReviews": 2,
+      "rating": 3.5,
       "name": "Mini Runner",
       "price": 80,
       "imgUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/kids-shoe/x/y/d/9c-brd-sh-1302-birde-original-imah78hbh8q2whns.jpeg?q=70",
@@ -463,8 +460,8 @@
     {
       "id": "18",
       "quantity": 1,
-      "noOfReviews": 1,
-      "rating": 4,
+      "noOfReviews": 2,
+      "rating": 4.5,
       "name": "Little Sprinter",
       "price": 85,
       "imgUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/kids-shoe/v/b/t/8c-z-pri-8033-bersache-original-imah5gcgffyc7t9w.jpeg?q=70",
@@ -490,8 +487,8 @@
     {
       "id": "19",
       "quantity": 1,
-      "noOfReviews": 1,
-      "rating": 4,
+      "noOfReviews": 2,
+      "rating": 4.5,
       "name": "Tiny Trekker",
       "price": 90,
       "imgUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/kids-shoe/5/h/v/1-h1011-boomer-cubs-original-imah4gm3vzzd6zuv.jpeg?q=70",
@@ -518,8 +515,8 @@
     {
       "id": "20",
       "quantity": 1,
-      "noOfReviews": 1,
-      "rating": 2,
+      "noOfReviews": 2,
+      "rating": 3.5,
       "name": "Junior Jumper",
       "price": 95,
       "imgUrl": "https://m.media-amazon.com/images/I/61smpQgbcCL._AC_UL480_FMwebp_QL65_.jpg",
@@ -545,7 +542,7 @@
     {
       "id": "21",
       "quantity": 1,
-      "noOfReviews": 1,
+      "noOfReviews": 2,
       "rating": 5,
       "name": "Playground Pro",
       "price": 70,
@@ -572,8 +569,8 @@
     {
       "id": "22",
       "quantity": 1,
-      "noOfReviews": 1,
-      "rating": 3,
+      "noOfReviews": 2,
+      "rating": 4,
       "name": "Explorer Sandals",
       "price": 60,
       "imgUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/kids-sandal/x/k/w/8c-crax-11-trz-original-imah9a3hedn8at5w.jpeg?q=70",
@@ -598,7 +595,7 @@
     {
       "id": "23",
       "quantity": 1,
-      "noOfReviews": 1,
+      "noOfReviews": 2,
       "rating": 5,
       "name": "Sporty Slip-Ons",
       "price": 75,
@@ -625,8 +622,8 @@
     {
       "id": "24",
       "quantity": 1,
-      "noOfReviews": 1,
-      "rating": 1,
+      "noOfReviews": 2,
+      "rating": 3,
       "name": "Adventure Boots",
       "price": 100,
       "imgUrl": "https://rukminim2.flixcart.com/image/612/612/xif0q/kids-shoe/0/s/m/-original-imaghugtsgwrg5he.jpeg?q=70",
@@ -648,15 +645,35 @@
       ],
       "discount": 20,
       "priceAfterDiscount": 80
-    }
-  ],
-  "loginInfo": [
+    },
     {
-      "id": "4109",
-      "name": "vishwas gour",
-      "address": "bhopal, 462003",
-      "gmail": "vishwasgour@gmail.com",
-      "password": "123"
+      "id": "bdbc",
+      "quantity": 1,
+      "noOfReviews": 1,
+      "rating": 5,
+      "category": "men",
+      "name": "Running Black Sneakers",
+      "detailed_description": "Lightweight sneakers with breathable mesh and cushioned sole for running",
+      "names": "Running Sneakers, Jogging Shoes, Sports Shoes, Lightweight Running Shoes, Breathable Sneakers, Men's Running Shoes",
+      "price": 200,
+      "discount": 10,
+      "about": "High-performance sneakers for running and jogging",
+      "imgUrl": "https://redtape.com/cdn/shop/files/RSL1075_1..jpg?v=1740073604",
+      "shoeType": "loafers",
+      "colors": [
+        "Red",
+        "Blue",
+        "Black"
+      ],
+      "sizeRange": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "priceAfterDiscount": 180
     }
   ],
   "review": [
@@ -920,6 +937,39 @@
       "like": 0,
       "dislike": 0,
       "star": 5
+    },
+    {
+      "id": "4c09",
+      "comment": "awesom product ",
+      "gmail": "sahilgour@gmail.com",
+      "productId": null,
+      "like": 0,
+      "dislike": 0,
+      "star": 5
+    }
+  ],
+  "userLogin": [
+    {
+      "id": "4109",
+      "name": "vishwas gour",
+      "address": "bhopal, 462003",
+      "gmail": "vishwasgour@gmail.com",
+      "password": "123"
+    }
+  ],
+  "employeeLogin": [
+    {
+      "id": "8cd1",
+      "name": "sahil gour",
+      "address": "123 bhopal new market, city, country",
+      "gmail": "sahilgour@gmail.com",
+      "password": "1",
+      "phone": " +91 9852718761",
+      "department": "hr",
+      "git": "https:/github/adminprofile/sahilgour@gmail.com",
+      "linkedin": "https:/linkedin/adminprofile/sahilgour@gmail.com",
+      "bio": "handling administrative operations, security, and user management.",
+      "date": "March 4, 2025"
     }
   ]
 }

@@ -50,7 +50,11 @@
 }
 
 .search-container .searchBox .searchInput input {
+    outline: none;
+    border: none;
+    width: 100%;
     padding-left: 3rem;
+    height: 2.4rem;
     box-shadow: 3px 5px 5px 1px rgba(190, 190, 190, 0.54);
     border-radius: 4rem;
 }

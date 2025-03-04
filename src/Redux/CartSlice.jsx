@@ -9,6 +9,7 @@ const Slice = createSlice({
     allCards:[],
     search : false, // for visibility
     wishlist: [],
+    whoLogin:""
   },
   reducers: {
     addToCart: (state, { payload }) => {
@@ -66,8 +67,11 @@ const Slice = createSlice({
     },
     removeAllFromWishlist: (state) => {
       state.wishlist.length = 0;
+    },
+    setWhoLogin:(state, {payload})=>{
+      state.whoLogin = payload;
     }
   }
 });
-export const { addToCart, removeFromCart, increQuantity, decreQuantity, currentUserInfo, removeAllFromCart,searchBoxIsVisible, toggleWishlit,removeAllFromWishlist } = Slice.actions;
+export const { addToCart, removeFromCart, increQuantity, decreQuantity, currentUserInfo, removeAllFromCart,searchBoxIsVisible, toggleWishlit,removeAllFromWishlist, setWhoLogin } = Slice.actions;
 export default Slice.reducer;

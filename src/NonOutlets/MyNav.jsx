@@ -16,9 +16,10 @@ import { CiSearch } from "react-icons/ci";
 import { PiShoppingCartThin } from "react-icons/pi";
 import { PiHeartThin } from "react-icons/pi";
 import { HiOutlineDotsCircleHorizontal } from "react-icons/hi";
-import { currentUserInfo, removeAllFromCart, removeAllFromWishlist, searchBoxIsVisible } from "../Redux/CartSlice";
+import { currentUserInfo, removeAllFromCart, removeAllFromWishlist, searchBoxIsVisible,setWhoLogin } from "../Redux/CartSlice";
 import { Modal } from 'antd';
 import { useState } from 'react';
+import { BsPlusCircle } from "react-icons/bs";
 // import { useState } from 'react';
 
 
@@ -32,6 +33,7 @@ function MyNav() {
     let cart = useSelector(state => state.cartSlice.cards);
     let wishlist = useSelector(state => state.cartSlice.wishlist);
     let currentUser = useSelector(state => state.cartSlice.currentUser);
+    const whoLogin = useSelector(state => state.cartSlice.whoLogin);
     const address = currentUser?.address || "Address";
     const name = currentUser?.name || "Login";
 
@@ -45,7 +47,8 @@ function MyNav() {
                     dispatch(currentUserInfo(null))
                     dispatch(removeAllFromCart())
                     dispatch(removeAllFromWishlist())
-                    navigate('/login');
+                    dispatch(setWhoLogin(""))
+                    navigate('/whoLogin');
                 }
             });
             return;
@@ -54,7 +57,7 @@ function MyNav() {
             Modal.confirm({
                 title: "Login",
                 onOk() {
-                    navigate('/login');
+                    navigate('/whoLogin');
                 }
             });
         }
@@ -89,10 +92,15 @@ function MyNav() {
                     <Link to="allProducts">Shoes</Link> |
                     <Link to="men">Men</Link> |
                     <Link to="women">Women</Link> |
-                    <Link to="kids">Kids</Link> |
-                    <Link to="admin">Admin</Link> |
+                    <Link to="kids">Kids</Link> 
                 </ul>
                 <ul className='nav-item right'>
+                    {(whoLogin == "employeeLogin") ? (<>
+                        <button onClick={() => navigate('/postUpdate/-1')}><BsPlusCircle /> </button>
+                    </>) : (<></>)}
+
+
+                 
                     <button onClick={showSearchBox}><CiSearch /> </button>
                     <button onClick={() => navigate('/wishlist')} ><PiHeartThin /> <span>{wishlist.length}</span></button>
                     <button onClick={() => navigate('/cart')}><PiShoppingCartThin /><span>{cart.length}</span></button>

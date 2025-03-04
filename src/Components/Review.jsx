@@ -128,6 +128,7 @@ function Review({ id }) {
   }
   // ==================== SHOW CURRENT I'D REVIES
   function allReviews() {
+    if(reviews.length == 0 ) return <h1  className='no-item'>No Reviews Yet </h1>
     return reviews.map((review) => {
       return (
         <div key={review.id} className='review-container'>
@@ -174,7 +175,7 @@ function Review({ id }) {
             {allReviews()}
           </div>
         </div>
-        <div className='related-products'></div>
+        {/* <div className='related-products'></div> */}
       </>
     )
   );
