@@ -32,11 +32,11 @@ const AdminProfile = () => {
                     {/* Profile Details */}
                     <div className="profile-details">
                         <h3>Profile Details</h3>
-                        <div><p><b>Email:</b> {loginInfo.gmail}</p></div>
-                        <div><p><b>Phone:</b> {loginInfo.phone}</p></div>
-                        <div><p><b>Address:</b> {loginInfo.address}</p></div>
-                        <div><p><b>Department:</b> {loginInfo.department}</p></div>
-                        <div><p><b>Joining Date:</b> {loginInfo.date}</p></div>
+                        <div><p><b>Email :</b> {loginInfo.gmail}</p></div>
+                        <div><p><b>Phone :</b> {loginInfo.phone}</p></div>
+                        <div><p><b>Address :</b> {loginInfo.address}</p></div>
+                        <div><p><b>Department :</b> {loginInfo.department}</p></div>
+                        <div><p><b>Joining Date :</b> {loginInfo.date}</p></div>
 
                         <h3>Bio</h3>
                         <div>
@@ -44,10 +44,10 @@ const AdminProfile = () => {
                         </div>
                         <h3>Social Links</h3>
                         <div>
-                            <b>LinkedIn:</b> {loginInfo.linkedin}
+                            <b>LinkedIn : </b> {loginInfo.linkedin}
                         </div>
                         <div>
-                            <b>GitHub :</b>  {loginInfo.git}
+                            <b>GitHub : </b>  {loginInfo.git}
                         </div>
 
                     </div>
